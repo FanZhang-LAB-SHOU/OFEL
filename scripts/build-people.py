@@ -387,8 +387,13 @@ for n, person in enumerate(people):
             portrait = ('<div class="member-intro-watermark" aria-hidden="true">OFEL</div>'
                         f'<div class="member-intro-portrait">{photo(hero_person, "member-intro-photo", 1080, 1500, priority=True)}</div>')
         intro_class = 'member-intro member-intro-photo-scene' if original_scene else 'member-intro'
+        scene_display = ''
+        if original_scene and hero.get('photo_display') == 'contained':
+            scene_display = (f' data-photo-display="contained" style="--scene-width: {scene_width}px; '
+                             f'--scene-ratio: {scene_width} / {scene_height}; '
+                             f'--scene-inverse-ratio: {scene_height / scene_width:.8f}"')
         intro = (
-            f'    <section class="{intro_class}" aria-labelledby="profile-title" data-member-intro>'
+            f'    <section class="{intro_class}" aria-labelledby="profile-title" data-member-intro{scene_display}>'
             f'{backdrop}'
             f'{portrait}'
             '<div class="container member-intro-layout">'

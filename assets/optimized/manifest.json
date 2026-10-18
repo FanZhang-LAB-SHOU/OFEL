@@ -1068,5 +1068,18 @@
         "bytes": 99920
       }
     ]
+  },
+  "assets/people/yang-yu.jpg": {
+    "sha256": "62de1fe3f81f0808801d2ad719dae711ce02d827ff047902823b23cb86a642ea",
+    "bytes": 62608,
+    "width": 440,
+    "height": 541,
+    "variants": [
+      {
+        "width": 440,
+        "src": "assets/people/yang-yu.jpg",
+        "bytes": 62608
+      }
+    ]
   }
 }

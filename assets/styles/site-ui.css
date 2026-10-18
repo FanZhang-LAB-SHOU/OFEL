@@ -339,6 +339,15 @@ body[data-member-hero] .shou-link img { padding: 2px; border-radius: 50%; backgr
 }
 .directory-empty, .publication-empty, .news-empty { border: 1px solid var(--ui-border); padding: 28px; background: white; border-radius: var(--ui-radius-md); }
 
+/* Keep self-selected display photos complete and at their supplied resolution. */
+.member-intro[data-photo-display="contained"] { background: radial-gradient(ellipse at 78% 45%, #19374b, #061626 72%); }
+.member-intro[data-photo-display="contained"]::after { background: linear-gradient(0deg, #04162c88, transparent 20%); }
+.member-intro[data-photo-display="contained"] .member-intro-scene-image { top: 50%; right: 6vw; bottom: auto; width: min(38vw, var(--scene-width)); min-width: 0; height: auto; max-height: calc(100svh - var(--header-height) - 80px); aspect-ratio: var(--scene-ratio); object-fit: contain; border-radius: var(--ui-radius-lg); transform: translateY(-50%); }
+@media (max-width: 760px) {
+  .member-intro[data-photo-display="contained"] .member-intro-scene-image { top: calc(var(--header-height) + 24px); right: auto; left: 50%; width: min(calc(100vw - 48px), var(--scene-width)); max-height: none; transform: translateX(-50%); }
+  .member-intro[data-photo-display="contained"] .member-intro-layout { padding-top: calc(var(--header-height) + min(calc(100vw - 48px), var(--scene-width)) * var(--scene-inverse-ratio) + 48px); }
+}
+
 /* Members directory: aligned portrait tiles on the shared ocean-blue canvas. */
 body:is([data-page="members"], [data-page="alumni"]) { background: #06182b; color: #e7f2fc; }
 body:is([data-page="members"], [data-page="alumni"]) .site-header { background: rgba(6, 24, 43, .94); border-bottom-color: #b3d9fa1c; }

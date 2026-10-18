@@ -282,10 +282,28 @@
           "name": "Yang Yu",
           "name_zh": "于洋",
           "role": "Master’s Student, Year 2",
-          "photo": null,
-          "email": null,
+          "photo": "assets/people/yang-yu.jpg",
+          "email": "2390109758@qq.com",
           "github": null,
-          "bio": null
+          "bio": "I’m a graduate student learning to live in peace with data, code and all kinds of error messages. My research focuses on fisheries stock assessment and CPUE standardisation. Daily life involves wrestling with data, a love–hate relationship with models, and repeatedly checking whether an unexpected result means something is wrong with the code or with me.\n\nI’m still finding my way in research, learning as I go and working things out through practice. I hope that one day I’ll truly understand my models, and that my models might understand me too.\n\nPlease enjoy a cat called Baimifan (plain rice).",
+          "photo_alt": "Baimifan, a white cat featured on Yang Yu’s profile",
+          "photo_position": "50% 50%",
+          "directory_photo_position": "50% 50%",
+          "profile_photo_aspect_ratio": "440 / 541",
+          "bio_zh": "一名正在努力与数据、代码以及各种报错和平共处的研究生。研究方向是渔业资源评估与 CPUE 标准化，日常工作包括和数据斗智斗勇、与模型相爱相杀，以及在结果不符合预期时反复确认究竟是代码出了问题，还是自己出了问题。\n\n目前仍在科研道路上摸索前进，主打一个边学边做、边做边悟。希望有一天能够真正理解自己的模型，也希望模型能够理解自己。\n\n请欣赏一个叫白米饭的猫子",
+          "hero": {
+            "layout": "photo",
+            "photo_dimensions": [
+              440,
+              541
+            ],
+            "photo_display": "contained",
+            "summary": "I study fisheries stock assessment and CPUE standardisation, while learning to make peace with data, code and error messages. The cat in the photo is Baimifan.",
+            "research": [
+              "Fisheries stock assessment",
+              "CPUE standardisation"
+            ]
+          }
         },
         {
           "name": "Xu Yan",
