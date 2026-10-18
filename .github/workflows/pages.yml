@@ -7,26 +7,20 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: pages
   cancel-in-progress: false
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
+    name: Build and check website
     runs-on: ubuntu-latest
     steps:
       - name: Check out source
         uses: actions/checkout@v7
         with:
           persist-credentials: false
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
       - name: Build static pages
         run: python3 scripts/build-site.py
       - name: Check clean URL routing
@@ -57,9 +51,26 @@ jobs:
           node demos/world-weather/test-model.cjs
           node demos/world-weather/test-controller.cjs
       - name: Upload website
+        if: github.repository == 'FanZhang-LAB-SHOU/OFEL'
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
+
+  deploy:
+    # Forks validate the site without requiring their own Pages configuration.
+    if: github.repository == 'FanZhang-LAB-SHOU/OFEL'
+    needs: build
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
       - name: Deploy website
         id: deployment
         uses: actions/deploy-pages@v4

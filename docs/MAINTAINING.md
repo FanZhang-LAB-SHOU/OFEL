@@ -192,6 +192,8 @@ OFEL/
 
 部署状态见 [Deploy laboratory website](https://github.com/FanZhang-LAB-SHOU/OFEL/actions/workflows/pages.yml)。
 
+工作流将构建检查和发布分为两个任务。所有仓库副本都会构建网站并运行完整检查；只有正式仓库 `FanZhang-LAB-SHOU/OFEL` 会上传发布文件并部署到 GitHub Pages。个人账号下的 fork 无需启用 Pages，部署任务会显示为 skipped，构建检查仍正常执行。
+
 README 的定制横幅和导航图标在 [`docs/assets/`](assets/) 中，网站预览为截图。README 视觉排版参考 [awesome-readme](https://github.com/matiassingers/awesome-readme) 和 [GitSkins](https://www.gitskins.com/)，图形与布局为本仓库定制。
 
 当前横幅为 [`ofel-banner.png`](assets/ofel-banner.png)，展示船队、金枪鱼群及 DNA 双螺旋，实验室名称下方标注 Fanzhang Lab，底部研究标签为 Population Dynamics；由内置 imagegen 工具基于原横幅编辑生成，保留深海蓝与青绿色调。[完整生成提示词](assets/ofel-banner-prompt.md) 随图保存。
