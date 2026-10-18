@@ -266,7 +266,42 @@ fill(ROOT / output_path('members/alumni.html'), 'alumni-cohort-links', [
 ])
 
 
-# Profile pages: name, role, contact, bio, publications, then previous/next person.
+def render_cv(cv, paper_list):
+    """Keep supplied CV entries on the person's page; manuscripts are not publication records."""
+    sections = []
+    navigation = []
+    for section in cv['sections']:
+        key = section['id']
+        if not re.fullmatch(r'[a-z][a-z0-9-]*', key):
+            raise ValueError(f'Invalid CV section ID: {key}')
+        section_id = 'profile-publications-title' if section['kind'] == 'publications' else 'cv-' + key
+        navigation.append(f'<a href="#{section_id}">{esc(section["title"])}</a>')
+        heading = f'<h2 id="{section_id}" data-reveal>{esc(section["title"])}</h2>'
+        if section['kind'] == 'publications':
+            note = f'<p class="profile-cv-note" data-reveal>{esc(section["note"])}</p>' if section.get('note') else ''
+            sections.append(f'<section class="profile-publications profile-cv-section" aria-labelledby="{section_id}">{heading}{note}{paper_list}</section>')
+            continue
+        cards = []
+        for item in section['entries']:
+            paragraphs = ''.join(f'<p>{esc(par)}</p>' for par in item.get('paragraphs', []))
+            if section['kind'] == 'manuscripts':
+                if item['status'] != 'Under review':
+                    raise ValueError(f'Unexpected manuscript status: {item["status"]}')
+                detail = (f'<p class="profile-cv-period">{item["year"]} · {esc(item["status"])}</p>'
+                          f'<h3>{esc(item["title"])}</h3><p class="profile-cv-authors">{esc(item["authors"])}</p>'
+                          f'<p class="profile-cv-subtitle">Submitted to <em>{esc(item["journal"])}</em></p>')
+            else:
+                period = f'<p class="profile-cv-period">{esc(item["period"])}</p>' if item.get('period') else ''
+                subtitle = f'<p class="profile-cv-subtitle">{esc(item["subtitle"])}</p>' if item.get('subtitle') else ''
+                detail = f'{period}<h3>{esc(item["title"])}</h3>{subtitle}'
+            cards.append(f'<article class="profile-cv-card" data-reveal>{detail}{paragraphs}</article>')
+        sections.append(f'<section class="profile-cv-section" aria-labelledby="{section_id}">{heading}'
+                        f'<div class="profile-cv-grid" data-layout="{esc(section.get("layout", "timeline"))}">{"".join(cards)}</div></section>')
+    return ('<div class="profile-cv"><nav class="profile-cv-nav" aria-label="Curriculum vitae sections" data-reveal>'
+            + ''.join(navigation) + '</nav>' + ''.join(sections) + '</div>')
+
+
+# Profile pages: name, role, contact, bio, optional CV, then previous/next person.
 header = expand((TEMPLATES / 'header.html').read_text())
 footer = expand((TEMPLATES / 'footer.html').read_text())
 for n, person in enumerate(people):
@@ -293,7 +328,20 @@ for n, person in enumerate(people):
         links.append(f'<a class="text-link" href="{esc(checked_researchgate(person))}" target="_blank" rel="noopener noreferrer">'
                      + icon('researchgate') + 'ResearchGate'
                      + '<span class="sr-only"> (opens in a new tab)</span></a>')
-    links_html = f'<div class="pi-links">{"".join(links)}</div>' if links else ''
+    if person.get('orcid'):
+        orcid = person['orcid']
+        if not re.fullmatch(r'\d{4}-\d{4}-\d{4}-\d{3}[\dX]', orcid):
+            raise ValueError(f'Invalid ORCID for {person["name"]}')
+        links.append(f'<a class="text-link" href="https://orcid.org/{esc(orcid)}" target="_blank" rel="noopener noreferrer">'
+                     f'<img src="assets/brands/orcid.svg" alt="" width="18" height="18">ORCID'
+                     f'<span class="sr-only"> {esc(orcid)} (opens in a new tab)</span></a>')
+    detail_links = list(links)
+    if person.get('phone'):
+        number = re.sub(r'[\s-]', '', person['phone'])
+        if not re.fullmatch(r'\+\d{7,15}', number):
+            raise ValueError(f'Invalid phone number for {person["name"]}')
+        detail_links.append(f'<a class="text-link" href="tel:{number}">{esc(person["phone"])}</a>')
+    links_html = f'<div class="pi-links">{"".join(detail_links)}</div>' if detail_links else ''
     bio = ''.join(f'<p>{esc(par)}</p>' for par in person['bio'].split('\n\n')) if person.get('bio') else \
         '<p class="profile-empty">Profile coming soon.</p>'
     if person.get('bio_zh'):
@@ -413,6 +461,9 @@ for n, person in enumerate(people):
     breadcrumb_html = '' if has_intro else f'        {breadcrumb}\n'
     detail_person = {**person, 'photo': person.get('profile_photo') or person.get('photo')}
     detail_photo_class = 'profile-photo profile-photo-enhanced' if person.get('profile_photo') else 'profile-photo'
+    curriculum = render_cv(person['cv'], paper_list) if person.get('cv') else (
+        '<section class="profile-publications" aria-labelledby="profile-publications-title">'
+        '<h2 id="profile-publications-title" data-reveal>Publications</h2>\n        ' + paper_list + '\n        </section>')
     content = (
         intro + f'    <section class="people section detail-page profile-page" aria-labelledby="{details_id}">\n'
         f'      <div class="container">\n'
@@ -424,8 +475,7 @@ for n, person in enumerate(people):
         f'<div class="profile-bio">{bio}</div></div>\n'
         f'        </div>\n'
         f'{gallery_html}'
-        f'        <section class="profile-publications" aria-labelledby="profile-publications-title">'
-        f'<h2 id="profile-publications-title" data-reveal>Publications</h2>\n        {paper_list}\n        </section>\n'
+        f'        {curriculum}\n'
         f'        <nav class="profile-pager" aria-label="Browse people" data-reveal>{"".join(pager)}</nav>\n'
         f'      </div>\n    </section>\n'
     )

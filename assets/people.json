@@ -227,18 +227,254 @@
           "photo_alt": "Runze Wang",
           "profile_photo_aspect_ratio": "1080 / 1812",
           "photo_position": "50% 20%",
-          "email": null,
+          "email": "runzewang1008@gmail.com",
           "github": null,
-          "bio": "Runze Wang is a master’s student at Shanghai Ocean University working on fisheries stock assessment. His research focuses on how model uncertainty is identified and specified in tuna assessments, and how modelling choices and institutional practices influence the assessment process.\n\nAs a co-first author of a study published in Fish and Fisheries, he reviewed 133 stock assessments covering seven major commercial tuna species across five regional fisheries management organisations. This work compares uncertainty specifications among organisations and provides guidance for making assessments more consistent and transparent.",
+          "bio": "Runze Wang is a professional master’s student in Fishery Development at Shanghai Ocean University, advised by Professor Fan Zhang, with graduation expected in June 2027. His research examines uncertainty in fisheries stock assessment and management, including ensemble modelling, changing recruitment dynamics and management strategy evaluation.\n\nHis work combines simulation–estimation experiments in R and Stock Synthesis 3 with predictive cross-validation and time-varying stock–recruitment modelling. As a co-first author of a study published in Fish and Fisheries, he examined uncertainty specifications in 133 assessments covering seven tuna species across five regional fisheries management organisations.",
           "hero": {
             "cutout": "assets/people/heroes/runze-wang-cutout.webp",
-            "summary": "I study uncertainty in tuna stock assessments: how it is identified, specified, and shaped by modelling choices and institutional practices.",
+            "summary": "I study uncertainty in fisheries stock assessment and management, focusing on ensemble modelling, changing recruitment dynamics and management strategy evaluation.",
             "research": [
-              "Stock assessment",
-              "Model uncertainty"
+              "Model uncertainty",
+              "Ensemble modelling"
             ]
           },
-          "directory_photo_position": "50% 0%"
+          "directory_photo_position": "50% 0%",
+          "phone": "+86 189-3996-8819",
+          "orcid": "0009-0008-4326-2111",
+          "cv": {
+            "sections": [
+              {
+                "id": "research-interests",
+                "title": "Research interests",
+                "layout": "compact",
+                "kind": "entries",
+                "entries": [
+                  {
+                    "period": "",
+                    "title": "Uncertainty in fisheries stock assessment and management",
+                    "subtitle": "",
+                    "paragraphs": []
+                  },
+                  {
+                    "period": "",
+                    "title": "Ensemble modelling",
+                    "subtitle": "",
+                    "paragraphs": []
+                  },
+                  {
+                    "period": "",
+                    "title": "Changing recruitment dynamics",
+                    "subtitle": "",
+                    "paragraphs": []
+                  },
+                  {
+                    "period": "",
+                    "title": "Management strategy evaluation",
+                    "subtitle": "",
+                    "paragraphs": []
+                  }
+                ]
+              },
+              {
+                "id": "education",
+                "title": "Education",
+                "layout": "timeline",
+                "kind": "entries",
+                "entries": [
+                  {
+                    "period": "Expected June 2027",
+                    "title": "Professional master’s studies in Fishery Development",
+                    "subtitle": "Shanghai Ocean University",
+                    "paragraphs": [
+                      "Advisor: Professor Fan Zhang.",
+                      "Thesis: Model Uncertainty in Fisheries Stock Assessment."
+                    ]
+                  },
+                  {
+                    "period": "June 2024",
+                    "title": "Bachelor of Agriculture",
+                    "subtitle": "Shanghai Ocean University",
+                    "paragraphs": [
+                      "Major: Marine Fishery Science and Technology."
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "research-experience",
+                "title": "Research experience",
+                "layout": "timeline",
+                "kind": "entries",
+                "entries": [
+                  {
+                    "period": "Nov 2025–Present",
+                    "title": "Ensemble modelling and model weighting",
+                    "subtitle": "",
+                    "paragraphs": [
+                      "Designed and implemented an operating-model and estimation-model simulation framework in R and Stock Synthesis 3 to compare ensemble weighting methods under natural-mortality misspecification.",
+                      "Implemented predictive weighting based on cross-validation and evaluated estimation bias and uncertainty calibration across scenarios."
+                    ]
+                  },
+                  {
+                    "period": "Sep 2024–Oct 2025",
+                    "title": "Global tuna assessment uncertainty review",
+                    "subtitle": "",
+                    "paragraphs": [
+                      "Examined uncertainty specifications in 133 assessments covering seven tuna species across five tuna Regional Fisheries Management Organizations, with André E. Punt and other coauthors. Contributed to study design, data compilation, comparative analysis, interpretation, and manuscript preparation.",
+                      "Found greater similarity in uncertainty specifications within management organizations than within species."
+                    ]
+                  },
+                  {
+                    "period": "Oct 2023–Present",
+                    "title": "Time-varying stock–recruitment modelling and environmental effects",
+                    "subtitle": "",
+                    "paragraphs": [
+                      "Developed likelihood-based time-varying stock–recruitment models for Atlantic tropical tunas to examine changes in productivity.",
+                      "Developing a study of whether environmental information improves recruitment forecasts beyond temporal benchmarks, accounting for assessment uncertainty and information available at the time of prediction."
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "publications",
+                "title": "Published research",
+                "kind": "publications",
+                "note": "Co-first author: Runze Wang shares first authorship on “Diversity and Subjectivity of Model Uncertainty Specification in Global Tuna Stock Assessment” (Fish and Fisheries, 2026)."
+              },
+              {
+                "id": "manuscripts",
+                "title": "Manuscripts under review",
+                "layout": "timeline",
+                "kind": "manuscripts",
+                "entries": [
+                  {
+                    "year": 2026,
+                    "authors": "Wang, R., Punt, A. E., Kell, L. T., & Zhang, F.",
+                    "title": "Predictive weighting improves robustness of ensemble modelling in fisheries stock assessment.",
+                    "journal": "ICES Journal of Marine Science",
+                    "status": "Under review",
+                    "paragraphs": []
+                  },
+                  {
+                    "year": 2026,
+                    "authors": "Dong, S., Jiang, M., Zhang, J., Wang, R., Punt, A. E., Chen, Z., Zhang, K., & Zhang, F.",
+                    "title": "Stock assessment without catch data: Inferring population status using a survey-based catch-at-length model.",
+                    "journal": "ICES Journal of Marine Science",
+                    "status": "Under review",
+                    "paragraphs": [
+                      "Contributed to research code development, including preliminary exploratory analyses and reference-point calculations for the operating model (OM) and estimation model (EM)."
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "conference-presentations",
+                "title": "Conference presentations",
+                "layout": "timeline",
+                "kind": "entries",
+                "entries": [
+                  {
+                    "period": "2026",
+                    "title": "Ensemble weighting simulation research",
+                    "subtitle": "ICCAT Working Group on Stock Assessment Methods (WGSAM) · Madrid",
+                    "paragraphs": [
+                      "Presented ensemble weighting simulation research. Working paper SCRS/2026/129."
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "teaching",
+                "title": "Teaching experience",
+                "layout": "timeline",
+                "kind": "entries",
+                "entries": [
+                  {
+                    "period": "",
+                    "title": "Teaching Assistant",
+                    "subtitle": "Shanghai Ocean University",
+                    "paragraphs": [
+                      "Assisted Professor Fan Zhang with teaching fisheries stock assessment models. Prepared laboratory materials and exercises on Stock Synthesis 3, RTMB, and statistical modelling."
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "technical-reports",
+                "title": "Technical reports",
+                "layout": "timeline",
+                "kind": "entries",
+                "entries": [
+                  {
+                    "period": "2026",
+                    "title": "ICCAT working paper SCRS/2026/127",
+                    "subtitle": "Coauthor",
+                    "paragraphs": [
+                      "Swordfish bycatch estimation for the Chinese longline fleet in the Atlantic."
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "technical-skills",
+                "title": "Technical skills",
+                "layout": "skills",
+                "kind": "entries",
+                "entries": [
+                  {
+                    "period": "",
+                    "title": "Programming and software",
+                    "subtitle": "",
+                    "paragraphs": [
+                      "R; TMB and RTMB; Stock Synthesis 3."
+                    ]
+                  },
+                  {
+                    "period": "",
+                    "title": "Fisheries modelling",
+                    "subtitle": "",
+                    "paragraphs": [
+                      "Age-structured integrated stock assessment; time-varying stock–recruitment models; biological reference points."
+                    ]
+                  },
+                  {
+                    "period": "",
+                    "title": "Quantitative methods",
+                    "subtitle": "",
+                    "paragraphs": [
+                      "Likelihood-based inference; simulation–estimation experiments; uncertainty analysis; model averaging; predictive cross-validation."
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "awards",
+                "title": "Awards",
+                "layout": "timeline",
+                "kind": "entries",
+                "entries": [
+                  {
+                    "period": "2026",
+                    "title": "National Scholarship for Graduate Students",
+                    "subtitle": "Ministry of Education of China",
+                    "paragraphs": []
+                  },
+                  {
+                    "period": "2024–2026",
+                    "title": "First-Class Academic Scholarship",
+                    "subtitle": "Shanghai Ocean University",
+                    "paragraphs": []
+                  },
+                  {
+                    "period": "Undergraduate studies",
+                    "title": "University-level Outstanding Graduate Award and academic scholarships",
+                    "subtitle": "Shanghai Ocean University",
+                    "paragraphs": []
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "name": "Jiayi Zhou",
