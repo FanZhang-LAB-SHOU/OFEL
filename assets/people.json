@@ -927,7 +927,6 @@
           "bio_zh": "唐茹彤，2026届研究生。研究方向为短生命周期物种资源评估，主要研究课题为剩余产量模型在气候变化下对茎柔鱼资源评估对比。",
           "hero": {
             "layout": "photo",
-            "photo_display": "contained",
             "photo_dimensions": [
               1280,
               1707
@@ -936,6 +935,12 @@
             "research": [
               "Short-lived species",
               "Stock assessment"
+            ],
+            "photo_copy": "right",
+            "scene_image": "assets/people/heroes/rutong-tang-kite-panorama-v1.webp",
+            "scene_dimensions": [
+              1672,
+              941
             ]
           }
         }
