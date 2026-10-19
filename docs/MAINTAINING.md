@@ -201,3 +201,5 @@ OFEL/
 README 的定制横幅和导航图标在 [`docs/assets/`](assets/) 中，网站预览为截图。README 视觉排版参考 [awesome-readme](https://github.com/matiassingers/awesome-readme) 和 [GitSkins](https://www.gitskins.com/)，图形与布局为本仓库定制。
 
 当前横幅为 [`ofel-banner.png`](assets/ofel-banner.png)，展示船队、金枪鱼群及 DNA 双螺旋，实验室名称下方标注 Fanzhang Lab，底部研究标签为 Population Dynamics；由内置 imagegen 工具基于原横幅编辑生成，保留深海蓝与青绿色调。[完整生成提示词](assets/ofel-banner-prompt.md) 随图保存。
+
+唐茹彤（2026 届毕业生）使用分开的两张原图：`photo` / 顶部首屏为 `rutong-tang-kite.jpg`，`profile_photo` / 下方资料及 Alumni 目录为 `rutong-tang-portrait.jpg`。`profile_photo_alt` 单独描述证件照。顶部设 `hero.photo_display = contained`，在桌面和手机都保持整张照片比例，以同时显示人物和风筝；边缘只做轻度羽化。

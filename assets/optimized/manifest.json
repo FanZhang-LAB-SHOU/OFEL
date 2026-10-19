@@ -1315,5 +1315,61 @@
         "bytes": 219244
       }
     ]
+  },
+  "assets/people/rutong-tang-portrait.jpg": {
+    "sha256": "5348aa1e73ceccb2e3e313efd3645c236f33011c5c97de066fe9f647e8d42df2",
+    "bytes": 332164,
+    "width": 1280,
+    "height": 1433,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/rutong-tang-portrait-cd3f52ff283b-320.webp",
+        "bytes": 6480
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/rutong-tang-portrait-cd3f52ff283b-640.webp",
+        "bytes": 17342
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/rutong-tang-portrait-cd3f52ff283b-960.webp",
+        "bytes": 29860
+      },
+      {
+        "width": 1280,
+        "src": "assets/optimized/rutong-tang-portrait-cd3f52ff283b-1280.webp",
+        "bytes": 41750
+      }
+    ]
+  },
+  "assets/people/rutong-tang-kite.jpg": {
+    "sha256": "3800ae64063a5db599bda9cd7af67f66f216ff268104bacfe87f3768a24eee68",
+    "bytes": 205989,
+    "width": 1280,
+    "height": 1707,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/rutong-tang-kite-75a5544cf970-320.webp",
+        "bytes": 12036
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/rutong-tang-kite-75a5544cf970-640.webp",
+        "bytes": 51306
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/rutong-tang-kite-75a5544cf970-960.webp",
+        "bytes": 109736
+      },
+      {
+        "width": 1280,
+        "src": "assets/optimized/rutong-tang-kite-75a5544cf970-1280.webp",
+        "bytes": 177548
+      }
+    ]
   }
 }

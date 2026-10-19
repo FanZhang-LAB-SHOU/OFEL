@@ -915,10 +915,29 @@
         {
           "name": "Rutong Tang",
           "name_zh": "唐茹彤",
-          "photo": null,
-          "email": null,
+          "photo": "assets/people/rutong-tang-kite.jpg",
+          "email": "Tangrt0113@163.com",
           "github": null,
-          "bio": null
+          "bio": "I’m Rutong Tang, a Master’s graduate from the class of 2026. I study stock assessment of short-lived species, comparing surplus production models for assessing jumbo squid under climate change.",
+          "profile_photo": "assets/people/rutong-tang-portrait.jpg",
+          "photo_alt": "Rutong Tang flying a butterfly kite beside a lake",
+          "profile_photo_alt": "Portrait of Rutong Tang",
+          "profile_photo_aspect_ratio": "1280 / 1433",
+          "directory_photo_position": "50% 40%",
+          "bio_zh": "唐茹彤，2026届研究生。研究方向为短生命周期物种资源评估，主要研究课题为剩余产量模型在气候变化下对茎柔鱼资源评估对比。",
+          "hero": {
+            "layout": "photo",
+            "photo_display": "contained",
+            "photo_dimensions": [
+              1280,
+              1707
+            ],
+            "summary": "I study stock assessment of short-lived species, comparing surplus production models for assessing jumbo squid under climate change.",
+            "research": [
+              "Short-lived species",
+              "Stock assessment"
+            ]
+          }
         }
       ]
     },

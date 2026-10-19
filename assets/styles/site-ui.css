@@ -386,7 +386,7 @@ body[data-member-hero] .shou-link img { padding: 2px; border-radius: 50%; backgr
 .member-intro[data-photo-display="contained"]::after { background: linear-gradient(0deg, #04162c88, transparent 20%); }
 /* Feather complete display photos into the canvas while keeping their centre clear. */
 .member-intro[data-photo-display="contained"] .member-intro-scene-image { top: 50%; right: 6vw; bottom: auto; width: min(38vw, var(--scene-width), calc((100svh - var(--header-height) - 80px) / var(--scene-inverse-ratio))); min-width: 0; height: auto; max-height: none; aspect-ratio: var(--scene-ratio); object-fit: contain; border-radius: 0; transform: translateY(-50%);
-  --scene-mask: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent), linear-gradient(180deg, transparent, #000 10%, #000 78%, transparent);
+  --scene-mask: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent), linear-gradient(180deg, transparent, #000 2%, #000 94%, transparent);
   -webkit-mask-image: var(--scene-mask); mask-image: var(--scene-mask);
   -webkit-mask-composite: source-in; mask-composite: intersect;
   -webkit-mask-size: 100% 100%; mask-size: 100% 100%;
@@ -1052,6 +1052,7 @@ body[data-page="fan-zhang"] main { padding-top: 0; }
   .member-intro-more { bottom: calc(20px + env(safe-area-inset-bottom, 0px)); }
   body[data-member-hero] .member-intro-photo-scene { padding-top: 0; background: #0b1c2c; }
   body[data-member-hero] .member-intro-photo-scene .member-intro-scene-image { position: absolute; inset: calc(var(--header-height) + 72px) 0 auto auto; z-index: 1; width: 60%; min-width: 0; height: var(--mobile-portrait-stage); max-height: none; aspect-ratio: auto; object-fit: cover; transform: none; -webkit-mask-image: linear-gradient(90deg, transparent, #000 18%), linear-gradient(#000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 18%), linear-gradient(#000 92%, transparent); -webkit-mask-composite: source-in; mask-composite: intersect; }
+  body[data-member-hero] .member-intro[data-photo-display="contained"] .member-intro-scene-image { width: min(60%, calc(var(--mobile-portrait-stage) / var(--scene-inverse-ratio))); height: auto; aspect-ratio: var(--scene-ratio); object-fit: contain; -webkit-mask-image: var(--scene-mask); mask-image: var(--scene-mask); }
   body[data-member-hero] .member-intro-photo-scene .member-intro-layout { width: auto; margin-inline: 16px; padding: calc(var(--header-height) + 120px) 0 112px; min-height: 100svh; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto; align-content: start; gap: 28px; }
   .profile-gallery-viewer { width: calc(100% - 24px); max-height: calc(100dvh - 24px); padding: 52px 12px calc(16px + env(safe-area-inset-bottom, 0px)); overflow: auto; }
   .profile-gallery-viewer figure img { height: clamp(100px, calc(100svh - 230px), 620px); }

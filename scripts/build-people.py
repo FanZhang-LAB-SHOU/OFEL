@@ -496,7 +496,8 @@ for n, person in enumerate(people):
     heading = (f'<h2 class="member-details-heading" id="member-details">{name}</h2>' if has_intro
                else f'<h1 id="profile-title">{name}</h1>')
     breadcrumb_html = '' if has_intro else f'        {breadcrumb}\n'
-    detail_person = {**person, 'photo': person.get('profile_photo') or person.get('photo')}
+    detail_person = {**person, 'photo': person.get('profile_photo') or person.get('photo'),
+                     'photo_alt': person.get('profile_photo_alt') or person.get('photo_alt') or person['name']}
     detail_photo_class = 'profile-photo profile-photo-enhanced' if person.get('profile_photo') else 'profile-photo'
     curriculum = render_cv(person['cv'], paper_list) if person.get('cv') else (
         '<section class="profile-publications" aria-labelledby="profile-publications-title">'

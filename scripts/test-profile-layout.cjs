@@ -70,6 +70,11 @@ for (const person of people.groups.concat(people.alumni || []).flatMap(group => 
     assert(html.includes('class="member-intro-identity"'), `${person.name}: group the left identity separately from the full-width summary`);
     assert(html.indexOf('data-member-intro') < html.indexOf('class="profile-grid"'));
     assert(html.includes('href="#member-details"') && html.includes('id="member-details"'));
+    if (person.profile_photo) {
+      const detailPhoto = html.match(/<img class="profile-img"[^>]*>/)[0];
+      assert(detailPhoto.includes(person.profile_photo), `${person.name}: use the designated photo below the hero`);
+      if (person.profile_photo_alt) assert(detailPhoto.includes(`alt="${person.profile_photo_alt}"`), `${person.name}: distinguish the profile portrait from the scene in its accessible name`);
+    }
     if (person.hero.layout === 'photo') {
       const intro = html.slice(html.indexOf('data-member-intro'), html.indexOf('class="profile-grid"'));
       assert(html.includes('class="member-intro member-intro-photo-scene"'));
