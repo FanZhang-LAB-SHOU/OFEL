@@ -20,3 +20,20 @@ body[data-page="more"] .shou-link img{padding:2px;border-radius:50%;background:w
 .pulse-metrics dd{font-size:clamp(26px,2.7vw,40px);overflow-wrap:anywhere}
 /* One full-width daily chart (page ranking removed). */
 .pulse-panels{grid-template-columns:1fr}
+
+/* Phone controls and long statistics stay inside the observatory panels. */
+@media (max-width:760px) {
+  .more-topline { flex-wrap:wrap; gap:12px; }
+  .more-topline .eyebrow { max-width:100%; }
+  .more-hero { gap:28px; padding-block:36px 48px; }
+  .more-hero h1 { font-size:clamp(36px,9.4vw,54px); }
+  .arrival-card { padding:24px 18px; }
+  .pulse-panel { padding:22px 18px; }
+  .pulse-panel figcaption { flex-wrap:wrap; gap:10px; }
+  .pulse-chart-key { margin-left:0; }
+  .pulse-metrics > div { min-width:0; }
+  .pulse-metrics dd { overflow-wrap:anywhere; }
+  .pulse-table { overflow-x:auto; }
+  .pulse-table summary, .pulse-refresh { min-height:44px; }
+  .pulse-provenance { flex-wrap:wrap; }
+}

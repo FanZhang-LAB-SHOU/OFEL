@@ -11,7 +11,7 @@ function functionSource(name) {
 }
 const scope = {};
 vm.runInNewContext(functionSource('facultyPortraitGeometry'), scope);
-for (const [width, height] of [[375, 812], [414, 896], [768, 1024], [1024, 768], [1280, 720], [1440, 900], [1512, 982], [1867, 925], [2560, 1080], [1200, 1300]]) {
+for (const [width, height] of [[320, 568], [360, 640], [375, 812], [390, 844], [414, 896], [430, 932], [568, 320], [760, 375], [768, 1024], [1024, 768], [1280, 720], [1440, 900], [1512, 982], [1867, 925], [2560, 1080], [1200, 1300]]) {
   const g = scope.facultyPortraitGeometry(width, height, 80);
   assert(g.headTop >= 80, 'Portrait head must remain below the navigation');
   assert(g.personLeft >= 0, 'The visible body should remain inside the screen');

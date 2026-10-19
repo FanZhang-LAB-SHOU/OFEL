@@ -30,6 +30,7 @@ jobs:
           python3 scripts/test-responsive-images.py
           node scripts/test-gateway-cards.cjs
           node scripts/test-profile-layout.cjs
+          node scripts/test-mobile-navigation.cjs
           node scripts/test-team-space.cjs
           node scripts/test-profile-gallery.cjs
       - name: Check page links and assets

@@ -40,6 +40,8 @@ python3 -m http.server 8765 --bind 127.0.0.1
 
 手机端首页四张导航卡片支持滑动、左右按钮、四个分页圆点，以及聚焦卡片区域后的方向键和 Home/End 键。桌面端保持网格，控制按钮仅在手机横向溢出时显示；减少动态效果的系统设置会禁用平滑切换。
 
+手机断点统一为 760px，共用样式末尾的 Phone layout 覆盖集中维护，避免更改 761px 以上的桌面声明。菜单在手机打开时锁定背景滚动，关闭、跳转或切回桌面后解除；菜单本身可滚动，触控入口至少 44px，表单使用 16px 字体防止 Safari 聚焦放大。运行 `node scripts/test-mobile-navigation.cjs` 检查菜单、子菜单、Escape、焦点返回、跳转和窗口切换。成员手机首屏按图片、简介、研究方向顺序正常排版，完整场景照片保留原比例；手机前后页卡片同宽，照片墙查看器保留可见的关闭及切换按钮。
+
 ### Fan Zhang 个人页
 
 全站共用 `assets/styles/site-ui.css` 中的系统字体、圆角与海蓝色彩变量，由 `templates/head.html` 和 `scripts/page_metadata.py` 在所有正式内容页统一加载，并按内容哈希更新缓存。`styles.css` 保留页面结构和基础响应式布局；UI 样式在后加载的共享文件中维护。原先只用于 Fan Zhang 页的 `faculty-ui.css` 已合并到共享文件，个人页特有布局仍使用 `body[data-page="fan-zhang"]` 限定。
@@ -48,7 +50,7 @@ python3 -m http.server 8765 --bind 127.0.0.1
 
 调整共享 UI 后运行完整构建、链接和交互检查。保持 `hidden` 筛选规则、手机导航、键盘焦点、减少动态效果设置以及原有图片比例／取景位置；不要用全局圆角规则裁切官方 logo 或改变照片为圆形。
 
-导师页顶部使用一张连续的无人背景 `assets/faculty/fan-zhang-library-background-v3.webp`，叠放既有修复人物 `assets/faculty/fan-zhang-hero-cutout-restored-v2.webp`；背景采用单一 `cover`，避免不同缩放照片叠放产生接缝。`facultyPortraitGeometry`（`script.js`）把桌面端人物限制在屏幕左半边；右侧 `.fz-workspace` 以正常网格排版姓名、搜索、五个入口与展开卡片，卡片内容从下方原章节读取，卡片内滚动，不覆盖人物。窄屏或竖屏把操作区放到人物下方。气泡保持在头部附近，窗口和气泡尺寸变化时重算位置。首屏导航透明，离开后恢复浅色；下方章节渐显，唯一 `h1` 在首屏。原图与旧抠图仍保留，背景处理提示词保存在 `assets/people/heroes/generation-notes.json`。调整布局后运行 `node scripts/test-profile-layout.cjs`，检查人物与右侧信息区分离、紧凑屏幕稳定性和渐显行为。
+导师页顶部使用一张连续的无人背景 `assets/faculty/fan-zhang-library-background-v3.webp`，叠放既有修复人物 `assets/faculty/fan-zhang-hero-cutout-restored-v2.webp`；背景采用单一 `cover`，避免不同缩放照片叠放产生接缝。`facultyPortraitGeometry`（`script.js`）把桌面端人物限制在屏幕左半边；右侧 `.fz-workspace` 以正常网格排版姓名、搜索、五个入口与展开卡片，卡片内容从下方原章节读取；桌面端卡片内滚动，手机端使用页面滚动并在打开后定位到卡片，不覆盖人物。窄屏或竖屏把操作区放到人物下方。气泡保持在头部附近，窗口和气泡尺寸变化时重算位置。首屏导航透明，离开后恢复浅色；下方章节渐显，唯一 `h1` 在首屏。原图与旧抠图仍保留，背景处理提示词保存在 `assets/people/heroes/generation-notes.json`。调整布局后运行 `node scripts/test-profile-layout.cjs`，检查人物与右侧信息区分离、紧凑屏幕稳定性和渐显行为。
 
 源文件为 `templates/members/fan-zhang.html`，样式使用 `faculty-` 前缀，避免影响其他成员页。保留 `#people` 和 `#principal-investigator` 原锚点。姓名仅出现一个主标题，职称加粗，联系按钮跳转联系页选择邮箱。ICCAT 的链接放在组织全称上。代表论文在 `scripts/build-site.py` 的 `faculty_dois` 中指定，标题、年份和期刊由现有论文库读取；只选择实验室成员／校友一作且 Fan Zhang 参与，或 Fan Zhang 本人一作的论文，排除外部合作者一作的论文，构建时校验这一条件。不在模板中手工复制论文信息。更换照片时保持完整人物可见，并检查桌面及手机的 `object-position`。
 
@@ -91,7 +93,7 @@ More 页面（`/more/`，模板 `templates/more.html`，交互代码 `assets/scr
 
 成员目录采用深海蓝底的紧凑拼贴网格，顶部导航与页脚同色；标题独立置于网格上方。照片区域统一为 3:4 比例，横竖对齐、间距一致，不设置交错偏移；姓名与身份／年级放在照片下方独立的半透明深蓝信息区，不覆盖照片，整张卡片链接个人页。优先使用 `profile_photo` 高清资料照，缺少照片时使用既有占位图。保持原组别顺序及年级从高到低的排序，组别旧锚点保留在该组第一位成员的姓名上，列表右下角以英文小字说明排序方式。桌面端为四列，中屏三列，手机两列；悬停和键盘聚焦时卡片轻微放大，减少动态效果设置下保留焦点提示并取消缩放。样式使用 `.directory-` 前缀，深色导航及页脚通过 `body[data-page="members"]` 限定，避免影响其他页面。
 
-成员页最上方另有 `.team-space` 照片首屏，标题为 “Meet Our Team.”，下面原有的完整名单仍按原顺序显示。首屏最多取已有照片的前 11 位成员，不生成缺失照片；每张照片链接已有个人主页。姓名仅在悬停或键盘聚焦时显示，链接始终有可访问名称。照片以各自轻缓的随机速度（约每秒 1.4–4.8 像素，手机略慢）在整个首屏范围内上下、左右穿行，到边界折返；可穿过中央标题后方，标题保留深色渐变衬底。悬停／聚焦时只暂停当前卡片，离开可见区域、切换浏览器标签或启用减少动态效果时停止全部运动。右下角 Motion 开关可手动暂停；禁用 JavaScript 时保留静态照片和正常链接。使用轻量 `requestAnimationFrame` 更新 GPU 变换，由 `initTeamSpace` 控制，照片标记 `floating-members` 由人员构建器生成。新增照片超过首屏数量时仍全部出现在下方目录中。
+成员页最上方另有 `.team-space` 照片首屏，标题为 “Meet Our Team.”，下面原有的完整名单仍按原顺序显示。首屏展示所有已有照片的在读成员，超过原先 11 个 CSS 位置的照片由构建器补充边缘位置，不生成缺失照片；每张照片链接已有个人主页。桌面姓名仅在悬停或键盘聚焦时显示，触控手机直接显示姓名，链接始终有可访问名称。照片以各自轻缓的随机速度（约每秒 1.4–4.8 像素，手机略慢）在整个首屏范围内上下、左右穿行，到边界折返；可穿过中央标题后方，标题保留深色渐变衬底。悬停／聚焦时只暂停当前卡片，离开可见区域、切换浏览器标签或启用减少动态效果时停止全部运动。右下角 Motion 开关可手动暂停；禁用 JavaScript 时保留静态照片和正常链接。使用轻量 `requestAnimationFrame` 更新 GPU 变换，由 `initTeamSpace` 控制，照片标记 `floating-members` 由人员构建器生成。新增照片会同步出现在首屏及下方目录中。
 
 `directory_photo_position` 和 `directory_photo_scale` 仅控制两个目录中的照片取景与缩放，不影响个人主页；默认居中取景。横向生活照可单独校正主体位置与比例，首屏漂浮照片复用这组取景设置。图片选图尺寸同时考虑原图宽高比、裁剪比例和缩放，最大候选使用原图，避免 Xin Cheng、Dongqi Lu 等横向照片裁剪后仍误载小缩略图。照片使用固定比例容器和绝对定位图像，信息区参与正常排版，避免文字挡脸及源图宽高差异引起的偏移。
 

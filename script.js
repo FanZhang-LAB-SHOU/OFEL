@@ -27,6 +27,7 @@ function setMenu(open) {
   menuButton.setAttribute('aria-expanded', String(open));
   menuButton.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
   navigation.classList.toggle('is-open', open);
+  document.body.classList.toggle('is-navigation-open', open && window.matchMedia('(max-width: 760px)').matches);
   closeDropdowns();
 }
 function updateNavigation() {
@@ -86,7 +87,7 @@ document.addEventListener('click', event => {
   if (!event.target.closest('.site-header')) setMenu(false);
   else if (!event.target.closest('#main-nav')) closeDropdowns();
 });
-window.matchMedia('(min-width: 701px)').addEventListener('change', () => setMenu(false));
+window.matchMedia('(min-width: 761px)').addEventListener('change', () => setMenu(false));
 
 function initNewsFilters() {
   const list = document.querySelector('#news-list');
@@ -452,7 +453,7 @@ function initGatewayCards() {
   const previous = controls.querySelector('[data-gateway-step="-1"]');
   const next = controls.querySelector('[data-gateway-step="1"]');
   const position = controls.querySelector('.gateway-position');
-  const mobile = window.matchMedia('(max-width: 700px)');
+  const mobile = window.matchMedia('(max-width: 760px)');
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
   let active = 0, frame = null;
   const labels = cards.map(card => card.querySelector('h3').textContent);
@@ -553,11 +554,13 @@ initContactEmail();
 // The portrait occupies the left half; the right workspace lays out controls and cards in normal flow.
 function facultyPortraitGeometry(width, height, headerHeight, viewportHeight = height) {
   const compact = width < 1000 || width / height < 1.2;
-  const imageHeight = compact ? Math.min(viewportHeight * .68, 600, width * 1.1) : Math.min(height, width * .60);
+  const phone = width <= 760;
+  const imageHeight = compact ? (phone ? Math.min(viewportHeight * .52, 430, width * 1.05)
+    : Math.min(viewportHeight * .68, 600, width * 1.1)) : Math.min(height, width * .60);
   const imageWidth = imageHeight * 4 / 3;
   const headX = width * (compact ? .5 : .28);
   const left = headX - .39 * imageWidth;
-  const top = compact ? headerHeight + 120 - .223 * imageHeight : height - imageHeight;
+  const top = compact ? headerHeight + (phone ? 80 : 120) - .223 * imageHeight : height - imageHeight;
   return { compact, width: imageWidth, height: imageHeight, left, top, headX,
     headTop: top + .223 * imageHeight, faceLeft: left + .29 * imageWidth,
     personLeft: left + .11 * imageWidth, personRight: left + .65 * imageWidth,
@@ -641,6 +644,9 @@ function initFacultyHero() {
     hero.querySelectorAll('[data-fz-open]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.fzOpen === key)));
     card.style.animation = 'none'; card.offsetWidth; card.style.animation = '';
     card.focus({ preventScroll: true });
+    if (window.matchMedia('(max-width: 760px)').matches) {
+      requestAnimationFrame(() => card.scrollIntoView({block: 'start', behavior: 'auto'}));
+    }
   }
   function close() { if (layer.hidden) return; layer.hidden = true; say(INTRO); hero.querySelectorAll('[data-fz-open]').forEach(b => b.setAttribute('aria-pressed', 'false')); if (opener) opener.focus({ preventScroll: true }); }
   hero.querySelectorAll('[data-fz-open]').forEach(b => b.addEventListener('click', () => open(b.dataset.fzOpen, b)));

@@ -26,3 +26,16 @@ body[data-embed="more"] .save-clock>button{background:#173c58;border-color:#3760
 /* Give the embedded content itself an opaque dark canvas, including grid gaps. */
 html[data-embed="more"] body,body[data-embed="more"] #main,body[data-embed="more"] .page-intro,body[data-embed="more"] .world-layout,body[data-embed="more"] .city-section{background:#081b2c}
 body[data-embed="more"] .page-intro{color:#e5f2fc}
+
+/* Match the host site's phone touch targets and prevent focus zoom in Safari. */
+@media (max-width:760px) {
+  #city-query { font-size:16px; }
+  .page-intro { flex-direction:column; align-items:stretch; }
+  body[data-embed="more"] .search-area { width:100%; }
+  .search-area { min-width:0; }
+  #city-search { max-width:100%; }
+  .weather-footer { flex-wrap:wrap; }
+  .weather-footer button { min-height:44px; }
+  .city-clock, .conditions-card { min-width:0; }
+  .zone-row, .city-meta { overflow-wrap:anywhere; }
+}
