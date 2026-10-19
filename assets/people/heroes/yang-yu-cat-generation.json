@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-18",
+  "mode": "Built-in image_gen tool",
+  "source": "assets/people/yang-yu.jpg",
+  "output": "assets/people/heroes/yang-yu-cat-cutout.webp",
+  "notes": "Extract Baimifan for the shared member introduction with HTML OFEL watermark. Keep the original photo for the directory, floating card and lower profile.",
+  "prompt": "Use case: background-extraction. Edit target: the supplied photograph of Baimifan, the white fluffy cat. Extract ONLY this exact cat as a clean transparent foreground asset for a laboratory member's profile hero. Preserve the cat's identity, green-gold eyes, pink nose, ear angles, head tilt, white fur color, body shape, seated/loaf pose, visible front paws, expression, whiskers and original lighting. Remove the entire pink curtain, laptop, desk, paper, books, floor, and every object around or underneath the cat. Do not replace the scene with another background. Do not invent legs or change the pose. Keep the full visible cat and both ears in frame, with a little transparent breathing room around the body. Source is low resolution: improve edge definition gently while preserving the original cat; no stylized redraw, new facial details or excessive sharpening. Natural fine fur edges, no white rectangular matte, no halo, no blur over the cat. Actual alpha transparency, not a checkerboard or solid color. Portrait canvas, cat centered. No text, OFEL lettering, UI, frame, props or shadow; lettering will be rendered separately in HTML behind the cat."
+}
