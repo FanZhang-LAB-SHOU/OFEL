@@ -499,7 +499,7 @@
           "bio": "I’m a graduate student slowly being domesticated by research. Academic papers by day, fan works by night. I can track fishing vessels across the Pacific with AIS, yet often can’t locate my own research direction.\n\nI have a knack for turning a passing obsession into a three-year project. My hobbies form unsupervised clusters. My state of mind follows a random walk, my idealism converges intermittently, and deadlines keep closing in.",
           "bio_zh": "马爽｜硕士研究生\n\n一名正在被科研缓慢驯化的研究生。白天写论文，晚上搞同人。能通过AIS追踪太平洋上的渔船，却时常定位不到自己的研究方向。擅长把三分钟热度发展成三年工程，兴趣爱好呈现无监督聚类状态。精神状态随机游走，理想主义间歇性收敛，DDL持续逼近中。",
           "hero": {
-            "cutout": "assets/people/heroes/shuang-ma-cutout.webp",
+            "cutout": "assets/people/heroes/shuang-ma-cutout-hat-v2.webp",
             "summary": "Academic papers by day, fan works by night. I can track fishing vessels across the Pacific with AIS, yet often can’t locate my own research direction.",
             "research": [
               "Fishing vessels",

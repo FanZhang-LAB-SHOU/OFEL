@@ -383,7 +383,13 @@ body[data-member-hero] .shou-link img { padding: 2px; border-radius: 50%; backgr
 /* Keep self-selected display photos complete and at their supplied resolution. */
 .member-intro[data-photo-display="contained"] { background: radial-gradient(ellipse at 78% 45%, #19374b, #061626 72%); }
 .member-intro[data-photo-display="contained"]::after { background: linear-gradient(0deg, #04162c88, transparent 20%); }
-.member-intro[data-photo-display="contained"] .member-intro-scene-image { top: 50%; right: 6vw; bottom: auto; width: min(38vw, var(--scene-width)); min-width: 0; height: auto; max-height: calc(100svh - var(--header-height) - 80px); aspect-ratio: var(--scene-ratio); object-fit: contain; border-radius: var(--ui-radius-lg); transform: translateY(-50%); }
+/* Feather complete display photos into the canvas while keeping their centre clear. */
+.member-intro[data-photo-display="contained"] .member-intro-scene-image { top: 50%; right: 6vw; bottom: auto; width: min(38vw, var(--scene-width), calc((100svh - var(--header-height) - 80px) / var(--scene-inverse-ratio))); min-width: 0; height: auto; max-height: none; aspect-ratio: var(--scene-ratio); object-fit: contain; border-radius: 0; transform: translateY(-50%);
+  --scene-mask: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent), linear-gradient(180deg, transparent, #000 10%, #000 78%, transparent);
+  -webkit-mask-image: var(--scene-mask); mask-image: var(--scene-mask);
+  -webkit-mask-composite: source-in; mask-composite: intersect;
+  -webkit-mask-size: 100% 100%; mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; }
 @media (max-width: 760px) {
   .member-intro[data-photo-display="contained"] .member-intro-scene-image { top: calc(var(--header-height) + 24px); right: auto; left: 50%; width: min(calc(100vw - 48px), var(--scene-width)); max-height: none; transform: translateX(-50%); }
   .member-intro[data-photo-display="contained"] .member-intro-layout { padding-top: calc(var(--header-height) + min(calc(100vw - 48px), var(--scene-width)) * var(--scene-inverse-ratio) + 48px); }
