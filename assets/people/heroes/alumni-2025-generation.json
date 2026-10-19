@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-18",
+  "mode": "Built-in image_gen tool",
+  "notes": "Transparent foreground portraits for the shared Xianglong Yan introduction template. Original photos remain unchanged in the directory and lower profile.",
+  "prompts": [
+    {
+      "slug": "yuhang-cheng",
+      "source": "assets/people/yuhang-cheng.jpg",
+      "output": "assets/people/heroes/yuhang-cheng-cutout.webp",
+      "prompt": "Use case: background-extraction. Edit target: the single supplied portrait photograph of young adult man with reddish-brown hair and a black crew-neck shirt; preserve his exact face, hair color, expression, shoulders and shirt. Create a clean, photorealistic transparent-background cutout of ONLY the existing person for a research-laboratory profile hero. Remove the entire original background, including any seat, window, trees or studio backdrop, while preserving the original person. Keep identity, facial proportions, pose, clothing, lighting and all visible shoulders and torso unchanged. Do not beautify, slim, relight, invent body parts, replace clothes, add text, add a border or create a full web layout. Retain the existing portrait composition and lower crop, centered within a portrait canvas with little transparent padding. Hair edges must be natural, detailed and free from halos. Actual alpha transparency, not white, black or checkerboard background."
+    },
+    {
+      "slug": "ziyi-geng",
+      "source": "assets/people/ziyi-geng.jpg",
+      "output": "assets/people/heroes/ziyi-geng-cutout.webp",
+      "prompt": "Use case: background-extraction. Edit target: the single supplied portrait photograph of young adult woman with eyeglasses, long dark hair, light blue jacket, white shirt and diagonal dark seatbelt; preserve her exact face, glasses, hairstyle, expression, sunlight and clothing including the seatbelt. Create a clean, photorealistic transparent-background cutout of ONLY the existing person for a research-laboratory profile hero. Remove the entire original background, including any seat, window, trees or studio backdrop, while preserving the original person. Keep identity, facial proportions, pose, clothing, lighting and all visible shoulders and torso unchanged. Do not beautify, slim, relight, invent body parts, replace clothes, add text, add a border or create a full web layout. Retain the existing portrait composition and lower crop, centered within a portrait canvas with little transparent padding. Hair edges must be natural, detailed and free from halos. Actual alpha transparency, not white, black or checkerboard background."
+    },
+    {
+      "slug": "faruyi-wan",
+      "source": "assets/people/faruyi-wan.jpg",
+      "output": "assets/people/heroes/faruyi-wan-cutout.webp",
+      "prompt": "Use case: background-extraction. Edit target: the single supplied portrait photograph of young adult woman with long dark hair, a black blazer and blue-and-white striped blouse; preserve her exact face, hairstyle, expression and clothing. Create a clean, photorealistic transparent-background cutout of ONLY the existing person for a research-laboratory profile hero. Remove the entire original background, including any seat, window, trees or studio backdrop, while preserving the original person. Keep identity, facial proportions, pose, clothing, lighting and all visible shoulders and torso unchanged. Do not beautify, slim, relight, invent body parts, replace clothes, add text, add a border or create a full web layout. Retain the existing portrait composition and lower crop, centered within a portrait canvas with little transparent padding. Hair edges must be natural, detailed and free from halos. Actual alpha transparency, not white, black or checkerboard background."
+    }
+  ]
+}

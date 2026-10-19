@@ -732,18 +732,14 @@
           "directory_photo_position": "50% 35%",
           "profile_photo_aspect_ratio": "480 / 640",
           "hero": {
-            "layout": "photo",
-            "photo_dimensions": [
-              480,
-              640
-            ],
-            "photo_display": "contained",
             "summary": "My research focuses on fisheries stock assessment, CPUE standardization, and the impacts of climate change and fish aggregating devices on tuna populations.",
             "research": [
               "Fisheries stock assessment",
               "CPUE standardization",
               "Climate change & FADs"
-            ]
+            ],
+            "cutout": "assets/people/heroes/yuhang-cheng-cutout.webp",
+            "background_color": "#718da6"
           }
         },
         {
@@ -758,17 +754,13 @@
           "directory_photo_position": "50% 35%",
           "profile_photo_aspect_ratio": "3060 / 4080",
           "hero": {
-            "layout": "photo",
-            "photo_dimensions": [
-              3060,
-              4080
-            ],
-            "photo_display": "contained",
             "summary": "My research focuses on fisheries stock assessment, particularly the sensitivity of the CMSY method to different parameter prior assumptions.",
             "research": [
               "Fisheries stock assessment",
               "CMSY prior sensitivity"
-            ]
+            ],
+            "cutout": "assets/people/heroes/ziyi-geng-cutout.webp",
+            "background_color": "#718da6"
           }
         },
         {
@@ -783,18 +775,14 @@
           "directory_photo_position": "50% 35%",
           "profile_photo_aspect_ratio": "2937 / 3917",
           "hero": {
-            "layout": "photo",
-            "photo_dimensions": [
-              2937,
-              3917
-            ],
-            "photo_display": "contained",
             "summary": "My research focuses on fisheries stock assessment, predictive modeling of CPUE, and spatiotemporal autocorrelation models for CPUE standardization.",
             "research": [
               "Fisheries stock assessment",
               "CPUE standardization",
               "Spatiotemporal modeling"
-            ]
+            ],
+            "cutout": "assets/people/heroes/faruyi-wan-cutout.webp",
+            "background_color": "#718da6"
           }
         }
       ]
