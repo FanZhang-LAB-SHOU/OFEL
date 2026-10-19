@@ -15,6 +15,9 @@ for (const [width, height] of [[320, 568], [360, 640], [375, 812], [390, 844], [
   const g = scope.facultyPortraitGeometry(width, height, 80);
   assert(g.headTop >= 80, 'Portrait head must remain below the navigation');
   assert(g.personLeft >= 0, 'The visible body should remain inside the screen');
+  if (width <= 760) {
+    assert(g.bottom - 32 > g.headTop + g.height * .5, 'Phone captions must stay below the face and shoulders');
+  }
   if (!g.compact) {
     assert(g.personRight <= width * .5, 'Portrait must fit in the left half');
     assert(width * .52 - g.personRight >= 20, 'Right workspace needs a gap from the body');
@@ -63,6 +66,13 @@ for (const person of people.groups.concat(people.alumni || []).flatMap(group => 
         assert(wide.includes(person.hero.scene_image), 'Use the extended continuous scene on desktop');
         assert(wide.includes(`width="${person.hero.scene_dimensions[0]}"`) && wide.includes(`height="${person.hero.scene_dimensions[1]}"`), 'The panorama needs its own aspect ratio so the subject remains full height');
       }
+    } else {
+      const {source: [sw, sh], frame: [x, y, w, h]} = person.hero.mobile_portrait;
+      assert([sw, sh, w, h].every(v => Number.isFinite(v) && v > 0), `${person.name}: invalid phone frame size`);
+      assert(x >= 0 && y >= 0 && x + w <= sw && y + h <= sh, `${person.name}: phone frame exceeds the source`);
+      const portrait = html.match(/<img class="member-intro-photo"[^>]*>/)[0];
+      assert(portrait.includes(`width="${sw}"`) && portrait.includes(`height="${sh}"`), `${person.name}: reserve the actual portrait ratio before loading`);
+      assert(html.includes(`--mobile-portrait-ratio: ${(w / h).toFixed(6)}`), `${person.name}: apply the individual phone framing`);
     }
   }
 }

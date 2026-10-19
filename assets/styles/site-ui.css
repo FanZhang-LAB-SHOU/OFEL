@@ -1016,10 +1016,25 @@ body[data-page="fan-zhang"] main { padding-top: 0; }
 
   /* Read introductions in order, with the foreground image above the copy. */
   .member-intro:not(.member-intro-photo-scene) { padding-top: calc(var(--header-height) + 16px); }
-  .member-intro:not(.member-intro-photo-scene) .member-intro-portrait { position: relative; inset: auto; width: min(calc(100% - 32px), 380px); height: clamp(260px, 48svh, 420px); margin-inline: auto; --portrait-bottom-solid: 78%; }
-  .member-intro:not(.member-intro-photo-scene) .member-intro-portrait[data-portrait-feather] { --portrait-side-feather: 10%; --portrait-bottom-solid: 72%; }
+  .member-intro:not(.member-intro-photo-scene) .member-intro-portrait {
+    position: relative; inset: auto; display: block;
+    width: min(calc(100% - 32px), calc(clamp(260px, 46svh, 380px) * var(--mobile-portrait-ratio)));
+    height: auto; aspect-ratio: var(--mobile-portrait-ratio); margin-inline: auto; overflow: hidden;
+    --portrait-side-feather: 5%; --portrait-bottom-solid: var(--mobile-fade-start, 76%);
+    -webkit-mask-image: var(--portrait-mask); mask-image: var(--portrait-mask);
+    --portrait-mask: linear-gradient(90deg, transparent, #000 var(--portrait-side-feather), #000 calc(100% - var(--portrait-side-feather)), transparent), linear-gradient(180deg, transparent, #000 var(--portrait-top-feather), #000 var(--portrait-bottom-solid), transparent);
+    -webkit-mask-composite: source-in; mask-composite: intersect;
+    -webkit-mask-size: 100% 100%; mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
+  }
+  .member-intro:not(.member-intro-photo-scene) .member-intro-portrait[data-portrait-feather] { --portrait-side-feather: 7%; --portrait-bottom-solid: var(--mobile-fade-start, 76%); }
+  .member-intro:not(.member-intro-photo-scene) .member-intro-photo {
+    position: absolute; left: var(--mobile-image-left); top: var(--mobile-image-top);
+    width: var(--mobile-image-width); height: auto; max-width: none; max-height: none;
+    -webkit-mask-image: none; mask-image: none;
+  }
   .member-intro:not(.member-intro-photo-scene) .member-intro-watermark { top: calc(var(--header-height) + 65px); left: 5%; font-size: 43vw; }
-  .member-intro:not(.member-intro-photo-scene) .member-intro-layout { min-height: 0; padding: 24px 0 calc(108px + env(safe-area-inset-bottom, 0px)); gap: 28px; }
+  .member-intro:not(.member-intro-photo-scene) .member-intro-layout { min-height: 0; margin-top: -12px; padding: 0 0 calc(108px + env(safe-area-inset-bottom, 0px)); gap: 28px; }
   .member-intro-copy { max-width: none; }
   .member-intro h1 { font-size: clamp(40px, 11vw, 62px); line-height: 1.06; overflow-wrap: anywhere; }
   .member-intro-role { font-size: 16px; margin-top: 14px; }
@@ -1114,6 +1129,11 @@ body[data-page="fan-zhang"] main { padding-top: 0; }
 
   /* Topic cards use page scrolling rather than a second small scroll panel on phones. */
   .fz-hero.is-compact .fz-workspace { margin-inline: 16px; gap: 18px; padding-bottom: 36px; }
+  .fz-stage-front .fz-layer { -webkit-mask-image: linear-gradient(#000 74%, transparent 100%); mask-image: linear-gradient(#000 74%, transparent 100%); }
+  .fz-hero.is-compact .fz-bubble { max-width: calc(100% - 48px); padding: 10px 15px; border-radius: 18px; }
+  .fz-bubble i { left: 50%; width: 12px; height: 12px; bottom: -6px; }
+  .fz-hero-shade { background: linear-gradient(180deg, #04162c55, transparent 25%, #04162c88 60%, #04162ced); }
+  .fz-hero-kicker { font-size: 10px; letter-spacing: .1em; }
   .fz-hero-id h1 { overflow-wrap: anywhere; }
   .fz-hero.is-compact .fz-chips { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
   .fz-hero.is-compact .fz-chips button, .fz-hero.is-compact .fz-chips button:nth-child(n + 4) { grid-column: auto; min-height: 46px; font-size: 14px; }

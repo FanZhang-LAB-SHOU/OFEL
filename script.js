@@ -555,7 +555,7 @@ initContactEmail();
 function facultyPortraitGeometry(width, height, headerHeight, viewportHeight = height) {
   const compact = width < 1000 || width / height < 1.2;
   const phone = width <= 760;
-  const imageHeight = compact ? (phone ? Math.min(viewportHeight * .52, 430, width * 1.05)
+  const imageHeight = compact ? (phone ? Math.min(viewportHeight * .56, 460, width * 1.3)
     : Math.min(viewportHeight * .68, 600, width * 1.1)) : Math.min(height, width * .60);
   const imageWidth = imageHeight * 4 / 3;
   const headX = width * (compact ? .5 : .28);
@@ -579,10 +579,12 @@ function initFacultyHero() {
       Object.assign(img.style, { left: `${g.left}px`, top: `${g.top}px`, width: `${g.width}px`, height: `${g.height}px`, right: 'auto', bottom: 'auto', objectFit: 'fill' });
     });
     hero.style.setProperty('--header-height', `${headerH}px`);
-    hero.style.setProperty('--fz-portrait-bottom', `${g.bottom + 24}px`);
+    // On phones the caption meets the feathered body instead of leaving a gap below a cut edge.
+    hero.style.setProperty('--fz-portrait-bottom', `${g.bottom + (W <= 760 ? -32 : 24)}px`);
     hero.style.setProperty('--fz-card-max', g.compact ? '55svh' : '100%');
-    const bubbleWidth = g.compact ? Math.min(300, W - 40) : Math.max(160, Math.min(300, g.faceLeft - 40));
-    bubbleBox.style.width = `${bubbleWidth}px`;
+    const desiredBubbleWidth = g.compact ? Math.min(300, W - 40) : Math.max(160, Math.min(300, g.faceLeft - 40));
+    bubbleBox.style.width = W <= 760 ? 'max-content' : `${desiredBubbleWidth}px`;
+    const bubbleWidth = W <= 760 ? bubbleBox.offsetWidth : desiredBubbleWidth;
     const bh = bubbleBox.offsetHeight;
     const left = g.compact ? (W - bubbleWidth) / 2 : Math.max(16, g.faceLeft - bubbleWidth - 24);
     const top = g.compact ? Math.max(headerH + 8, g.headTop - bh - 18) : Math.max(headerH + 16, g.top + .34 * g.height - bh * .6);
@@ -605,6 +607,8 @@ function initFacultyHero() {
                   contact: 'Thinking of joining or visiting the lab? Email me.' };
   let typing = 0;
   function say(text) {
+    // The opened card already supplies topic feedback. Keep a short greeting above the phone portrait.
+    if (hero.clientWidth <= 760) { ++typing; bubble.textContent = INTRO; layout(); return; }
     const id = ++typing;
     if (still) { bubble.textContent = text; layout(); return; }
     let i = 0; bubble.textContent = '';

@@ -132,6 +132,25 @@ def contact(member, kind):
             f'aria-label="{esc(description)}" title="{esc(value)}">{mark}</a>')
 
 
+def mobile_portrait_style(person):
+    """Frame the visible subject on phones without changing the desktop image."""
+    framing = person['hero'].get('mobile_portrait')
+    if not framing:
+        raise ValueError(f'Missing mobile portrait framing for {person["name"]}')
+    sw, sh = framing['source']
+    x, y, width, height = framing['frame']
+    fade = framing.get('fade_start', 76)
+    if not (sw > 0 and sh > 0 and width > 0 and height > 0
+            and 0 <= x <= sw - width and 0 <= y <= sh - height
+            and 60 <= fade <= 95):
+        raise ValueError(f'Invalid mobile portrait framing for {person["name"]}')
+    return (f' style="--mobile-portrait-ratio: {width / height:.6f}; '
+            f'--mobile-image-width: {sw / width * 100:.6f}%; '
+            f'--mobile-image-left: {-x / width * 100:.6f}%; '
+            f'--mobile-image-top: {-y / height * 100:.6f}%; '
+            f'--mobile-fade-start: {fade}%"')
+
+
 def photo(member, cls, width, height, priority=False, sizes=None):
     if not member.get('photo'):
         return placeholder
@@ -446,8 +465,9 @@ for n, person in enumerate(people):
             if feather not in {None, 'soft', 'cropped'}:
                 raise ValueError(f'Invalid portrait feathering for {person["name"]}')
             feather_attr = f' data-portrait-feather="{feather}"' if feather else ''
+            portrait_width, portrait_height = hero['mobile_portrait']['source']
             portrait = ('<div class="member-intro-watermark" aria-hidden="true">OFEL</div>'
-                        f'<div class="member-intro-portrait"{feather_attr}>{photo(hero_person, "member-intro-photo", 1080, 1500, priority=True)}</div>')
+                        f'<div class="member-intro-portrait"{feather_attr}{mobile_portrait_style(person)}>{photo(hero_person, "member-intro-photo", portrait_width, portrait_height, priority=True)}</div>')
         intro_class = 'member-intro member-intro-photo-scene' if original_scene else 'member-intro'
         scene_display = ''
         if original_scene and (hero.get('photo_display') == 'contained' or hero.get('photo_copy') == 'right'):
