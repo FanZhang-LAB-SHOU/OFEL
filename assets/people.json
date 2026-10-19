@@ -683,10 +683,28 @@
         {
           "name": "Haotian Sun",
           "name_zh": "孙昊天",
-          "photo": null,
+          "photo": "assets/people/haotian-sun.jpg",
           "email": null,
           "github": null,
-          "bio": null
+          "bio": "Haotian Sun is a 2026 master’s graduate of Shanghai Ocean University. His research focuses on tuna biology and spawning-ground assessment.",
+          "photo_alt": "Haotian Sun seated by the sea, looking toward a ship",
+          "photo_position": "20% 50%",
+          "directory_photo_position": "0% 50%",
+          "profile_photo_aspect_ratio": "1567 / 1279",
+          "bio_zh": "孙昊天，上海海洋大学2026届硕士毕业生，研究方向为金枪鱼生物学与产卵场评估。",
+          "hero": {
+            "layout": "photo",
+            "photo_dimensions": [
+              1567,
+              1279
+            ],
+            "photo_copy": "right",
+            "summary": "My research focuses on tuna biology and spawning-ground assessment.",
+            "research": [
+              "Tuna biology",
+              "Spawning-ground assessment"
+            ]
+          }
         },
         {
           "name": "Rutong Tang",

@@ -344,7 +344,7 @@ body[data-member-hero] .shou-link img { padding: 2px; border-radius: 50%; backgr
   .member-intro-wash { display: none; }
   .member-intro .pi-links a { background: #13283c; -webkit-backdrop-filter: none; backdrop-filter: none; }
 }
-/* A complete original photo keeps the subject on the right and all introduction copy on the left. */
+/* Original photo scenes place introduction copy beside the subject. */
 .member-intro-photo-scene { background: #263644; }
 .member-intro-scene-image { position: absolute; inset: 0 0 0 auto; z-index: -2; width: auto; min-width: 100%; height: 100%; max-width: none; object-fit: cover; object-position: right bottom !important; }
 .member-intro-photo-scene::after { background:
@@ -354,10 +354,20 @@ body[data-member-hero] .shou-link img { padding: 2px; border-radius: 50%; backgr
 .member-intro-photo-scene .member-intro-layout { width: auto; max-width: none; margin-left: clamp(24px, 6vw, 96px); margin-right: 54%; padding: calc(var(--header-height) + 44px) 0 110px; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto 1fr; align-items: start; gap: 36px; }
 .member-intro-photo-scene .member-intro-copy { text-shadow: 0 2px 18px #04162c66; }
 .member-intro-photo-scene .member-intro-research { grid-column: 1; text-align: left; padding: 0; }
+/* Mirror the copy placement for photos with a subject on the left. */
+.member-intro[data-photo-copy="right"] .member-intro-scene-image { width: 100%; object-position: left 15% !important; }
+.member-intro[data-photo-copy="right"] .member-intro-layout { margin-left: 54%; margin-right: clamp(24px, 6vw, 96px); }
+.member-intro[data-photo-copy="right"]::after { background:
+  linear-gradient(180deg, #04162c66, transparent 30%),
+  linear-gradient(90deg, transparent 30%, #04162cbf 62%, #04162cd9),
+  linear-gradient(0deg, #04162c88, transparent 40%); }
 @media (max-width: 760px) {
   .member-intro-photo-scene .member-intro-scene-image { top: var(--header-height); width: 100%; height: auto; aspect-ratio: 3 / 2; }
   .member-intro-photo-scene::after { background: none; }
   .member-intro-photo-scene .member-intro-layout { margin-inline: 24px; padding-top: calc(var(--header-height) + 66.667vw + 24px); padding-bottom: 110px; grid-template-rows: auto; gap: 30px; }
+  .member-intro[data-photo-copy="right"] .member-intro-scene-image { aspect-ratio: var(--scene-ratio); }
+  .member-intro[data-photo-copy="right"]::after { background: none; }
+  .member-intro[data-photo-copy="right"] .member-intro-layout { margin-inline: 24px; padding-top: calc(var(--header-height) + 100vw * var(--scene-inverse-ratio) + 24px); }
 }
 .directory-empty, .publication-empty, .news-empty { border: 1px solid var(--ui-border); padding: 28px; background: white; border-radius: var(--ui-radius-md); }
 

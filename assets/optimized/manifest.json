@@ -1081,5 +1081,38 @@
         "bytes": 62608
       }
     ]
+  },
+  "assets/people/haotian-sun.jpg": {
+    "sha256": "edbcaefa9550bf3fcee6d64919931c9214565f2fe11d4daac5e595cbb7869dba",
+    "bytes": 365805,
+    "width": 1567,
+    "height": 1279,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/haotian-sun-e766fcd6096f-320.webp",
+        "bytes": 12488
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/haotian-sun-e766fcd6096f-640.webp",
+        "bytes": 29836
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/haotian-sun-e766fcd6096f-960.webp",
+        "bytes": 48384
+      },
+      {
+        "width": 1440,
+        "src": "assets/optimized/haotian-sun-e766fcd6096f-1440.webp",
+        "bytes": 78122
+      },
+      {
+        "width": 1567,
+        "src": "assets/optimized/haotian-sun-e766fcd6096f-1567.webp",
+        "bytes": 84634
+      }
+    ]
   }
 }

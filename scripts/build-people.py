@@ -436,8 +436,10 @@ for n, person in enumerate(people):
                         f'<div class="member-intro-portrait">{photo(hero_person, "member-intro-photo", 1080, 1500, priority=True)}</div>')
         intro_class = 'member-intro member-intro-photo-scene' if original_scene else 'member-intro'
         scene_display = ''
-        if original_scene and hero.get('photo_display') == 'contained':
-            scene_display = (f' data-photo-display="contained" style="--scene-width: {scene_width}px; '
+        if original_scene and (hero.get('photo_display') == 'contained' or hero.get('photo_copy') == 'right'):
+            scene_variant = ('data-photo-display="contained"' if hero.get('photo_display') == 'contained'
+                             else 'data-photo-copy="right"')
+            scene_display = (f' {scene_variant} style="--scene-width: {scene_width}px; '
                              f'--scene-ratio: {scene_width} / {scene_height}; '
                              f'--scene-inverse-ratio: {scene_height / scene_width:.8f}"')
         intro = (
