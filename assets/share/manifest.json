@@ -174,5 +174,29 @@
     "height": 800,
     "type": "image/jpeg",
     "bytes": 82143
+  },
+  "assets/people/yuhang-cheng.jpg": {
+    "sha256": "60b99862537c6a6eba67ed560cdf9e63bee7026b63cde40f2a3c3d78a788db14",
+    "src": "assets/share/yuhang-cheng-0fd63e95d28d.jpg",
+    "width": 480,
+    "height": 640,
+    "type": "image/jpeg",
+    "bytes": 25179
+  },
+  "assets/people/ziyi-geng.jpg": {
+    "sha256": "e13a21ba48b1cfe62fba5772a1cfe6358756ae79ccc683385c550aa1334edcad",
+    "src": "assets/share/ziyi-geng-a2a0eb443e07.jpg",
+    "width": 900,
+    "height": 1200,
+    "type": "image/jpeg",
+    "bytes": 151832
+  },
+  "assets/people/faruyi-wan.jpg": {
+    "sha256": "699021ec0cd05aee0df6bc4ddb0952f1ae69fd4c5ac18ccd87ede5ab827f9147",
+    "src": "assets/share/faruyi-wan-470f5978de01.jpg",
+    "width": 900,
+    "height": 1200,
+    "type": "image/jpeg",
+    "bytes": 83854
   }
 }

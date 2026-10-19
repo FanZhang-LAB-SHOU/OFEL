@@ -723,26 +723,79 @@
         {
           "name": "Yuhang Cheng",
           "name_zh": "承昱航",
-          "photo": null,
-          "email": null,
+          "photo": "assets/people/yuhang-cheng.jpg",
+          "email": "chengyuhang015@163.com",
           "github": null,
-          "bio": null
+          "bio": "I am Yuhang Cheng, a Master’s graduate (Class of 2025). During my master’s studies, my research focused on fisheries stock assessment and CPUE standardization, as well as the impacts of climate change and FADs (fish aggregating devices) on tuna populations.",
+          "photo_alt": "Portrait of Yuhang Cheng",
+          "photo_position": "50% 35%",
+          "directory_photo_position": "50% 35%",
+          "profile_photo_aspect_ratio": "480 / 640",
+          "hero": {
+            "layout": "photo",
+            "photo_dimensions": [
+              480,
+              640
+            ],
+            "photo_display": "contained",
+            "summary": "My research focuses on fisheries stock assessment, CPUE standardization, and the impacts of climate change and fish aggregating devices on tuna populations.",
+            "research": [
+              "Fisheries stock assessment",
+              "CPUE standardization",
+              "Climate change & FADs"
+            ]
+          }
         },
         {
           "name": "Ziyi Geng",
           "name_zh": "耿紫宜",
-          "photo": null,
-          "email": null,
+          "photo": "assets/people/ziyi-geng.jpg",
+          "email": "2227519912@qq.com",
           "github": null,
-          "bio": null
+          "bio": "I am Ziyi Geng, and I graduated with a Master’s degree in 2025. My research interests lie in fisheries stock assessment, with a particular focus on the sensitivity of the CMSY method to different parameter prior assumptions.",
+          "photo_alt": "Portrait of Ziyi Geng",
+          "photo_position": "50% 35%",
+          "directory_photo_position": "50% 35%",
+          "profile_photo_aspect_ratio": "3060 / 4080",
+          "hero": {
+            "layout": "photo",
+            "photo_dimensions": [
+              3060,
+              4080
+            ],
+            "photo_display": "contained",
+            "summary": "My research focuses on fisheries stock assessment, particularly the sensitivity of the CMSY method to different parameter prior assumptions.",
+            "research": [
+              "Fisheries stock assessment",
+              "CMSY prior sensitivity"
+            ]
+          }
         },
         {
           "name": "Faruyi Wan",
           "name_zh": "万发如意",
-          "photo": null,
-          "email": null,
+          "photo": "assets/people/faruyi-wan.jpg",
+          "email": "13608591426@163.com",
           "github": null,
-          "bio": null
+          "bio": "I am Faruyi Wan, and I graduated with a Master’s degree in 2025. During my master’s studies, my research focused on fisheries stock assessment and CPUE standardization, with particular emphasis on predictive modeling of CPUE and on exploring the application of spatiotemporal autocorrelation models in CPUE standardization.",
+          "photo_alt": "Portrait of Faruyi Wan",
+          "photo_position": "50% 35%",
+          "directory_photo_position": "50% 35%",
+          "profile_photo_aspect_ratio": "2937 / 3917",
+          "hero": {
+            "layout": "photo",
+            "photo_dimensions": [
+              2937,
+              3917
+            ],
+            "photo_display": "contained",
+            "summary": "My research focuses on fisheries stock assessment, predictive modeling of CPUE, and spatiotemporal autocorrelation models for CPUE standardization.",
+            "research": [
+              "Fisheries stock assessment",
+              "CPUE standardization",
+              "Spatiotemporal modeling"
+            ]
+          }
         }
       ]
     }

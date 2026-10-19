@@ -409,8 +409,10 @@ for n, person in enumerate(people):
         tint = hero.get('background_color')
         if original_scene:
             scene_width, scene_height = hero['photo_dimensions']
+            scene_sizes = ('(max-width: 760px) calc(100vw - 48px), 38vw'
+                           if hero.get('photo_display') == 'contained' else 'max(100vw, 150svh)')
             backdrop = photo(person, 'member-intro-scene-image', scene_width, scene_height,
-                             priority=True, sizes='max(100vw, 150svh)')
+                             priority=True, sizes=scene_sizes)
             if hero.get('scene_image'):
                 if not (ROOT / hero['scene_image']).is_file():
                     raise ValueError(f'Missing extended scene for {person["name"]}')

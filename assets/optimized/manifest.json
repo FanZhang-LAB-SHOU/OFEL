@@ -1114,5 +1114,89 @@
         "bytes": 84634
       }
     ]
+  },
+  "assets/people/yuhang-cheng.jpg": {
+    "sha256": "60b99862537c6a6eba67ed560cdf9e63bee7026b63cde40f2a3c3d78a788db14",
+    "bytes": 158912,
+    "width": 480,
+    "height": 640,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/yuhang-cheng-84dad68ee0ec-320.webp",
+        "bytes": 7460
+      },
+      {
+        "width": 480,
+        "src": "assets/optimized/yuhang-cheng-84dad68ee0ec-480.webp",
+        "bytes": 13348
+      }
+    ]
+  },
+  "assets/people/ziyi-geng.jpg": {
+    "sha256": "e13a21ba48b1cfe62fba5772a1cfe6358756ae79ccc683385c550aa1334edcad",
+    "bytes": 2914313,
+    "width": 3060,
+    "height": 4080,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/ziyi-geng-a609ec4c076b-320.webp",
+        "bytes": 20250
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/ziyi-geng-a609ec4c076b-640.webp",
+        "bytes": 59326
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/ziyi-geng-a609ec4c076b-960.webp",
+        "bytes": 111574
+      },
+      {
+        "width": 1440,
+        "src": "assets/optimized/ziyi-geng-a609ec4c076b-1440.webp",
+        "bytes": 197694
+      },
+      {
+        "width": 1920,
+        "src": "assets/optimized/ziyi-geng-a609ec4c076b-1920.webp",
+        "bytes": 281678
+      }
+    ]
+  },
+  "assets/people/faruyi-wan.jpg": {
+    "sha256": "699021ec0cd05aee0df6bc4ddb0952f1ae69fd4c5ac18ccd87ede5ab827f9147",
+    "bytes": 7208542,
+    "width": 2937,
+    "height": 3917,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/faruyi-wan-5867cb82a0c5-320.webp",
+        "bytes": 7542
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/faruyi-wan-5867cb82a0c5-640.webp",
+        "bytes": 26158
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/faruyi-wan-5867cb82a0c5-960.webp",
+        "bytes": 56042
+      },
+      {
+        "width": 1440,
+        "src": "assets/optimized/faruyi-wan-5867cb82a0c5-1440.webp",
+        "bytes": 155900
+      },
+      {
+        "width": 1920,
+        "src": "assets/optimized/faruyi-wan-5867cb82a0c5-1920.webp",
+        "bytes": 267324
+      }
+    ]
   }
 }
