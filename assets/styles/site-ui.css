@@ -1022,14 +1022,14 @@ body[data-page="fan-zhang"] main { padding-top: 0; }
     position: absolute; inset: calc(var(--header-height) + 72px) 0 auto auto; display: block;
     width: min(60%, calc(var(--mobile-portrait-stage) * var(--mobile-portrait-ratio)));
     height: auto; aspect-ratio: var(--mobile-portrait-ratio); margin: 0; overflow: hidden;
-    --portrait-side-feather: 5%; --portrait-bottom-solid: var(--mobile-fade-start, 76%);
+    --portrait-side-feather: 5%; --portrait-bottom-solid: var(--mobile-fade-start, 92%);
     -webkit-mask-image: var(--portrait-mask); mask-image: var(--portrait-mask);
     --portrait-mask: linear-gradient(90deg, transparent, #000 var(--portrait-side-feather), #000 calc(100% - var(--portrait-side-feather)), transparent), linear-gradient(180deg, transparent, #000 var(--portrait-top-feather), #000 var(--portrait-bottom-solid), transparent);
     -webkit-mask-composite: source-in; mask-composite: intersect;
     -webkit-mask-size: 100% 100%; mask-size: 100% 100%;
     -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
   }
-  .member-intro:not(.member-intro-photo-scene) .member-intro-portrait[data-portrait-feather] { --portrait-side-feather: 7%; --portrait-bottom-solid: var(--mobile-fade-start, 76%); }
+  .member-intro:not(.member-intro-photo-scene) .member-intro-portrait[data-portrait-feather] { --portrait-side-feather: 7%; --portrait-bottom-solid: var(--mobile-fade-start, 92%); }
   .member-intro:not(.member-intro-photo-scene) .member-intro-photo {
     position: absolute; left: var(--mobile-image-left); top: var(--mobile-image-top);
     width: var(--mobile-image-width); height: auto; max-width: none; max-height: none;
@@ -1051,7 +1051,7 @@ body[data-page="fan-zhang"] main { padding-top: 0; }
   .member-intro-research span { font-size: clamp(20px, 5.3vw, 25px); }
   .member-intro-more { bottom: calc(20px + env(safe-area-inset-bottom, 0px)); }
   body[data-member-hero] .member-intro-photo-scene { padding-top: 0; background: #0b1c2c; }
-  body[data-member-hero] .member-intro-photo-scene .member-intro-scene-image { position: absolute; inset: calc(var(--header-height) + 72px) 0 auto auto; z-index: 1; width: 60%; min-width: 0; height: var(--mobile-portrait-stage); max-height: none; aspect-ratio: auto; object-fit: cover; transform: none; -webkit-mask-image: linear-gradient(90deg, transparent, #000 18%), linear-gradient(#000 72%, transparent); mask-image: linear-gradient(90deg, transparent, #000 18%), linear-gradient(#000 72%, transparent); -webkit-mask-composite: source-in; mask-composite: intersect; }
+  body[data-member-hero] .member-intro-photo-scene .member-intro-scene-image { position: absolute; inset: calc(var(--header-height) + 72px) 0 auto auto; z-index: 1; width: 60%; min-width: 0; height: var(--mobile-portrait-stage); max-height: none; aspect-ratio: auto; object-fit: cover; transform: none; -webkit-mask-image: linear-gradient(90deg, transparent, #000 18%), linear-gradient(#000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 18%), linear-gradient(#000 92%, transparent); -webkit-mask-composite: source-in; mask-composite: intersect; }
   body[data-member-hero] .member-intro-photo-scene .member-intro-layout { width: auto; margin-inline: 16px; padding: calc(var(--header-height) + 120px) 0 112px; min-height: 100svh; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto; align-content: start; gap: 28px; }
   .profile-gallery-viewer { width: calc(100% - 24px); max-height: calc(100dvh - 24px); padding: 52px 12px calc(16px + env(safe-area-inset-bottom, 0px)); overflow: auto; }
   .profile-gallery-viewer figure img { height: clamp(100px, calc(100svh - 230px), 620px); }
@@ -1141,9 +1141,10 @@ body[data-page="fan-zhang"] main { padding-top: 0; }
   .fz-hero.is-compact .fz-hero-id h1 { font-size: clamp(28px, 8.2vw, 44px); line-height: 1.12; overflow-wrap: normal; }
   .fz-hero-id .person-name-zh { font-size: 15px; }
   .fz-hero-id p:last-child { font-size: 14px; }
-  .fz-stage-front .fz-layer { -webkit-mask-image: linear-gradient(#000 74%, transparent 100%); mask-image: linear-gradient(#000 74%, transparent 100%); }
+  .fz-stage-front .fz-layer { -webkit-mask-image: linear-gradient(#000 94%, transparent 100%); mask-image: linear-gradient(#000 94%, transparent 100%); }
   .fz-hero.is-compact .fz-bubble { max-width: calc(100% - 48px); padding: 10px 15px; border-radius: 18px; }
-  .fz-bubble i { left: 50%; width: 12px; height: 12px; bottom: -6px; }
+  .fz-bubble [data-fz-bubble]::after { display: none; }
+  .fz-bubble i { left: var(--fz-tail, 50%); width: 12px; height: 12px; bottom: -8px; transform: translateX(-50%); border-radius: 0; clip-path: polygon(0 0, 100% 0, 50% 100%); }
   .fz-hero-shade { background: linear-gradient(180deg, #04162c55, transparent 25%, #04162c88 60%, #04162ced); }
   .fz-hero-kicker { display: none; }
   .fz-hero.is-compact .fz-chips { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }

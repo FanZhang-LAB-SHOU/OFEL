@@ -568,6 +568,11 @@ function facultyPortraitGeometry(width, height, headerHeight, viewportHeight = h
     personLeft: left + .11 * imageWidth, personRight: left + .65 * imageWidth,
     bottom: top + imageHeight };
 }
+function phoneFacultyBubbleGeometry(width, headerHeight, portrait, bubbleWidth, bubbleHeight) {
+  const left = Math.max(16, Math.min(width - bubbleWidth - 16, portrait.headX - bubbleWidth / 2));
+  return { left, top: Math.max(headerHeight + 8, portrait.headTop - bubbleHeight - 16),
+    tail: portrait.headX - left };
+}
 function initFacultyHero() {
   const hero = document.querySelector('[data-fz-hero]');
   if (!hero) return;
@@ -588,8 +593,10 @@ function initFacultyHero() {
     bubbleBox.style.width = W <= 760 ? 'max-content' : `${desiredBubbleWidth}px`;
     const bubbleWidth = W <= 760 ? bubbleBox.offsetWidth : desiredBubbleWidth;
     const bh = bubbleBox.offsetHeight;
-    const left = W <= 760 ? 16 : g.compact ? (W - bubbleWidth) / 2 : Math.max(16, g.faceLeft - bubbleWidth - 24);
-    const top = W <= 760 ? headerH + 20 : g.compact ? Math.max(headerH + 8, g.headTop - bh - 18) : Math.max(headerH + 16, g.top + .34 * g.height - bh * .6);
+    const phoneBubble = W <= 760 ? phoneFacultyBubbleGeometry(W, headerH, g, bubbleWidth, bh) : null;
+    const left = phoneBubble ? phoneBubble.left : g.compact ? (W - bubbleWidth) / 2 : Math.max(16, g.faceLeft - bubbleWidth - 24);
+    const top = phoneBubble ? phoneBubble.top : g.compact ? Math.max(headerH + 8, g.headTop - bh - 18) : Math.max(headerH + 16, g.top + .34 * g.height - bh * .6);
+    if (phoneBubble) bubbleBox.style.setProperty('--fz-tail', `${phoneBubble.tail}px`);
     bubbleBox.classList.toggle('is-left', !g.compact);
     bubbleBox.style.left = `${left}px`; bubbleBox.style.top = `${top}px`;
   }

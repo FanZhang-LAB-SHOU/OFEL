@@ -139,7 +139,7 @@ def mobile_portrait_style(person):
         raise ValueError(f'Missing mobile portrait framing for {person["name"]}')
     sw, sh = framing['source']
     x, y, width, height = framing['frame']
-    fade = framing.get('fade_start', 76)
+    fade = framing.get('fade_start', 92)
     if not (sw > 0 and sh > 0 and width > 0 and height > 0
             and 0 <= x <= sw - width and 0 <= y <= sh - height
             and 60 <= fade <= 95):

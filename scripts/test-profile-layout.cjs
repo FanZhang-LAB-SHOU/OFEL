@@ -11,6 +11,7 @@ function functionSource(name) {
 }
 const scope = {};
 vm.runInNewContext(functionSource('facultyPortraitGeometry'), scope);
+vm.runInNewContext(functionSource('phoneFacultyBubbleGeometry'), scope);
 for (const [width, height] of [[320, 568], [360, 640], [375, 812], [390, 844], [414, 896], [430, 932], [568, 320], [760, 375], [768, 1024], [1024, 768], [1280, 720], [1440, 900], [1512, 982], [1867, 925], [2560, 1080], [1200, 1300]]) {
   const g = scope.facultyPortraitGeometry(width, height, 80);
   assert(g.headTop >= 80, 'Portrait head must remain below the navigation');
@@ -23,6 +24,14 @@ for (const [width, height] of [[320, 568], [360, 640], [375, 812], [390, 844], [
     assert.equal(g.bottom, 80 + 72 + Math.max(260, Math.min(width * .8, 390)), 'The body must meet the shared identity baseline');
     const browserToolbarChange = scope.facultyPortraitGeometry(width, height, 80, height - 100);
     assert.equal(browserToolbarChange.top, g.top, 'Mobile browser toolbar changes must not shift the portrait');
+    for (const [bw, bh] of [[154, 40], [180, 56], [220, 76]]) {
+      const bubble = scope.phoneFacultyBubbleGeometry(width, 80, g, bw, bh);
+      assert(bubble.left >= 16 && bubble.left + bw <= width - 16, 'Phone greeting must fit on screen');
+      assert(bubble.top >= 88 && bubble.top + bh <= g.headTop - 12, 'Greeting must sit above the head without covering it');
+      assert(g.headTop - bubble.top - bh <= 20, 'Greeting must stay next to the head, not near the header');
+      assert(bubble.tail >= 8 && bubble.tail <= bw - 8, 'Speech tail must stay inside the bubble');
+      assert.equal(bubble.left + bubble.tail, g.headX, 'Speech tail must point at the portrait');
+    }
   }
   if (!g.compact) {
     assert(g.personRight <= width * .5, 'Portrait must fit in the left half');
