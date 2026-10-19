@@ -299,6 +299,7 @@ body[data-member-hero] .shou-link img { padding: 2px; border-radius: 50%; backgr
   -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; }
 .member-intro-layout { position: relative; z-index: 2; display: grid; grid-template-columns: 34% 39% 27%; align-items: center; min-height: 100svh; padding-block: calc(var(--header-height) + 40px) 100px; }
 .member-intro-copy { min-width: 0; max-width: 390px; }
+.member-intro-identity { display: contents; }
 .member-intro-greeting { font-size: clamp(24px, 2.3vw, 36px); line-height: 1.2; font-weight: 650; letter-spacing: -.035em; }
 .member-intro h1 { margin-top: 4px; color: #fff; font: 800 clamp(48px, 5.5vw, 88px)/.98 var(--ui-font); letter-spacing: -.055em; }
 .member-intro h1 span { display: block; }
@@ -1014,12 +1015,13 @@ body[data-page="fan-zhang"] main { padding-top: 0; }
   .footer-links a { display: inline-flex; align-items: center; min-height: 44px; }
   .footer-bottom { font-size: 12px; }
 
-  /* Read introductions in order, with the foreground image above the copy. */
-  .member-intro:not(.member-intro-photo-scene) { padding-top: calc(var(--header-height) + 16px); }
+  /* Phone portraits sit on the right beside the identity; longer copy follows below. */
+  .member-intro { --mobile-portrait-stage: clamp(260px, 80vw, 390px); }
+  .member-intro:not(.member-intro-photo-scene) { padding-top: 0; }
   .member-intro:not(.member-intro-photo-scene) .member-intro-portrait {
-    position: relative; inset: auto; display: block;
-    width: min(calc(100% - 32px), calc(clamp(260px, 46svh, 380px) * var(--mobile-portrait-ratio)));
-    height: auto; aspect-ratio: var(--mobile-portrait-ratio); margin-inline: auto; overflow: hidden;
+    position: absolute; inset: calc(var(--header-height) + 72px) 0 auto auto; display: block;
+    width: min(60%, calc(var(--mobile-portrait-stage) * var(--mobile-portrait-ratio)));
+    height: auto; aspect-ratio: var(--mobile-portrait-ratio); margin: 0; overflow: hidden;
     --portrait-side-feather: 5%; --portrait-bottom-solid: var(--mobile-fade-start, 76%);
     -webkit-mask-image: var(--portrait-mask); mask-image: var(--portrait-mask);
     --portrait-mask: linear-gradient(90deg, transparent, #000 var(--portrait-side-feather), #000 calc(100% - var(--portrait-side-feather)), transparent), linear-gradient(180deg, transparent, #000 var(--portrait-top-feather), #000 var(--portrait-bottom-solid), transparent);
@@ -1033,19 +1035,24 @@ body[data-page="fan-zhang"] main { padding-top: 0; }
     width: var(--mobile-image-width); height: auto; max-width: none; max-height: none;
     -webkit-mask-image: none; mask-image: none;
   }
-  .member-intro:not(.member-intro-photo-scene) .member-intro-watermark { top: calc(var(--header-height) + 65px); left: 5%; font-size: 43vw; }
-  .member-intro:not(.member-intro-photo-scene) .member-intro-layout { min-height: 0; margin-top: -12px; padding: 0 0 calc(108px + env(safe-area-inset-bottom, 0px)); gap: 28px; }
+  .member-intro:not(.member-intro-photo-scene) .member-intro-watermark { top: calc(var(--header-height) + 115px); left: 5%; font-size: 43vw; }
+  .member-intro:not(.member-intro-photo-scene) .member-intro-layout { min-height: 100svh; margin-top: 0; padding: calc(var(--header-height) + 120px) 0 calc(108px + env(safe-area-inset-bottom, 0px)); align-content: start; gap: 28px; }
   .member-intro-copy { max-width: none; }
-  .member-intro h1 { font-size: clamp(40px, 11vw, 62px); line-height: 1.06; overflow-wrap: anywhere; }
-  .member-intro-role { font-size: 16px; margin-top: 14px; }
+  .member-intro-identity { display: flex; flex-direction: column; justify-content: center; width: 40%; min-height: calc(var(--mobile-portrait-stage) - 48px); }
+  .member-intro h1 { font-size: clamp(21px, var(--mobile-name-size, 7.5vw), 44px); line-height: 1.08; overflow-wrap: normal; }
+  .member-intro h1 span { display: block; }
+  .member-intro h1 span + span::before { content: none; }
+  .member-intro-greeting { font-size: 20px; }
+  .member-intro .person-name-zh { font-size: 15px; margin-top: 10px; }
+  .member-intro-role { font-size: 14px; margin-top: 12px; }
   .member-intro-summary { font-size: 16px; line-height: 1.75; margin-top: 18px; }
   .member-intro .pi-links { display: flex; flex-wrap: wrap; margin-top: 20px; }
   .member-intro .pi-links a { font-size: 13px; }
   .member-intro-research span { font-size: clamp(20px, 5.3vw, 25px); }
   .member-intro-more { bottom: calc(20px + env(safe-area-inset-bottom, 0px)); }
-  body[data-member-hero] .member-intro-photo-scene { padding-top: var(--header-height); }
-  body[data-member-hero] .member-intro-photo-scene .member-intro-scene-image { position: relative; inset: auto; width: 100%; min-width: 0; height: auto; max-height: none; aspect-ratio: var(--scene-ratio, 3 / 2); object-fit: contain; transform: none; }
-  body[data-member-hero] .member-intro-photo-scene .member-intro-layout { width: auto; margin-inline: 16px; padding: 26px 0 112px; min-height: 0; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto; gap: 28px; }
+  body[data-member-hero] .member-intro-photo-scene { padding-top: 0; background: #0b1c2c; }
+  body[data-member-hero] .member-intro-photo-scene .member-intro-scene-image { position: absolute; inset: calc(var(--header-height) + 72px) 0 auto auto; z-index: 1; width: 60%; min-width: 0; height: var(--mobile-portrait-stage); max-height: none; aspect-ratio: auto; object-fit: cover; transform: none; -webkit-mask-image: linear-gradient(90deg, transparent, #000 18%), linear-gradient(#000 72%, transparent); mask-image: linear-gradient(90deg, transparent, #000 18%), linear-gradient(#000 72%, transparent); -webkit-mask-composite: source-in; mask-composite: intersect; }
+  body[data-member-hero] .member-intro-photo-scene .member-intro-layout { width: auto; margin-inline: 16px; padding: calc(var(--header-height) + 120px) 0 112px; min-height: 100svh; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto; align-content: start; gap: 28px; }
   .profile-gallery-viewer { width: calc(100% - 24px); max-height: calc(100dvh - 24px); padding: 52px 12px calc(16px + env(safe-area-inset-bottom, 0px)); overflow: auto; }
   .profile-gallery-viewer figure img { height: clamp(100px, calc(100svh - 230px), 620px); }
   .gallery-close { width: 44px; height: 44px; }
@@ -1128,13 +1135,17 @@ body[data-page="fan-zhang"] main { padding-top: 0; }
   .home-film-player { width: 100%; height: auto; }
 
   /* Topic cards use page scrolling rather than a second small scroll panel on phones. */
-  .fz-hero.is-compact .fz-workspace { margin-inline: 16px; gap: 18px; padding-bottom: 36px; }
+  .fz-hero { --mobile-portrait-stage: clamp(260px, 80vw, 390px); }
+  .fz-hero.is-compact .fz-workspace { margin-inline: 16px; gap: 18px; padding-top: calc(var(--header-height) + 120px); padding-bottom: 36px; }
+  .fz-hero.is-compact .fz-hero-id { display: flex; flex-direction: column; justify-content: center; width: 40%; min-height: calc(var(--mobile-portrait-stage) - 48px); }
+  .fz-hero.is-compact .fz-hero-id h1 { font-size: clamp(28px, 8.2vw, 44px); line-height: 1.12; overflow-wrap: normal; }
+  .fz-hero-id .person-name-zh { font-size: 15px; }
+  .fz-hero-id p:last-child { font-size: 14px; }
   .fz-stage-front .fz-layer { -webkit-mask-image: linear-gradient(#000 74%, transparent 100%); mask-image: linear-gradient(#000 74%, transparent 100%); }
   .fz-hero.is-compact .fz-bubble { max-width: calc(100% - 48px); padding: 10px 15px; border-radius: 18px; }
   .fz-bubble i { left: 50%; width: 12px; height: 12px; bottom: -6px; }
   .fz-hero-shade { background: linear-gradient(180deg, #04162c55, transparent 25%, #04162c88 60%, #04162ced); }
-  .fz-hero-kicker { font-size: 10px; letter-spacing: .1em; }
-  .fz-hero-id h1 { overflow-wrap: anywhere; }
+  .fz-hero-kicker { display: none; }
   .fz-hero.is-compact .fz-chips { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
   .fz-hero.is-compact .fz-chips button, .fz-hero.is-compact .fz-chips button:nth-child(n + 4) { grid-column: auto; min-height: 46px; font-size: 14px; }
   .fz-hero.is-compact .fz-chips button:last-child { grid-column: 1 / -1; }

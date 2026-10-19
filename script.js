@@ -555,12 +555,14 @@ initContactEmail();
 function facultyPortraitGeometry(width, height, headerHeight, viewportHeight = height) {
   const compact = width < 1000 || width / height < 1.2;
   const phone = width <= 760;
-  const imageHeight = compact ? (phone ? Math.min(viewportHeight * .56, 460, width * 1.3)
+  const phoneStageHeight = Math.max(260, Math.min(width * .8, 390));
+  const imageHeight = compact ? (phone ? Math.min(420, width * .8)
     : Math.min(viewportHeight * .68, 600, width * 1.1)) : Math.min(height, width * .60);
   const imageWidth = imageHeight * 4 / 3;
-  const headX = width * (compact ? .5 : .28);
+  const headX = phone ? width - 8 - .26 * imageWidth : width * (compact ? .5 : .28);
   const left = headX - .39 * imageWidth;
-  const top = compact ? headerHeight + (phone ? 80 : 120) - .223 * imageHeight : height - imageHeight;
+  const top = phone ? headerHeight + 72 + phoneStageHeight - imageHeight
+    : compact ? headerHeight + 120 - .223 * imageHeight : height - imageHeight;
   return { compact, width: imageWidth, height: imageHeight, left, top, headX,
     headTop: top + .223 * imageHeight, faceLeft: left + .29 * imageWidth,
     personLeft: left + .11 * imageWidth, personRight: left + .65 * imageWidth,
@@ -586,8 +588,8 @@ function initFacultyHero() {
     bubbleBox.style.width = W <= 760 ? 'max-content' : `${desiredBubbleWidth}px`;
     const bubbleWidth = W <= 760 ? bubbleBox.offsetWidth : desiredBubbleWidth;
     const bh = bubbleBox.offsetHeight;
-    const left = g.compact ? (W - bubbleWidth) / 2 : Math.max(16, g.faceLeft - bubbleWidth - 24);
-    const top = g.compact ? Math.max(headerH + 8, g.headTop - bh - 18) : Math.max(headerH + 16, g.top + .34 * g.height - bh * .6);
+    const left = W <= 760 ? 16 : g.compact ? (W - bubbleWidth) / 2 : Math.max(16, g.faceLeft - bubbleWidth - 24);
+    const top = W <= 760 ? headerH + 20 : g.compact ? Math.max(headerH + 8, g.headTop - bh - 18) : Math.max(headerH + 16, g.top + .34 * g.height - bh * .6);
     bubbleBox.classList.toggle('is-left', !g.compact);
     bubbleBox.style.left = `${left}px`; bubbleBox.style.top = `${top}px`;
   }

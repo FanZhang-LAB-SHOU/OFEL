@@ -16,7 +16,13 @@ for (const [width, height] of [[320, 568], [360, 640], [375, 812], [390, 844], [
   assert(g.headTop >= 80, 'Portrait head must remain below the navigation');
   assert(g.personLeft >= 0, 'The visible body should remain inside the screen');
   if (width <= 760) {
-    assert(g.bottom - 32 > g.headTop + g.height * .5, 'Phone captions must stay below the face and shoulders');
+    const identityRight = 16 + (width - 32) * .4;
+    assert(g.headX > width * .65, 'Phone portraits must sit on the right, not in the centre');
+    assert(g.faceLeft > identityRight + 8, 'The left identity column must not cover the face');
+    assert(g.personRight <= width - 7, 'Keep the phone portrait inside the right edge');
+    assert.equal(g.bottom, 80 + 72 + Math.max(260, Math.min(width * .8, 390)), 'The body must meet the shared identity baseline');
+    const browserToolbarChange = scope.facultyPortraitGeometry(width, height, 80, height - 100);
+    assert.equal(browserToolbarChange.top, g.top, 'Mobile browser toolbar changes must not shift the portrait');
   }
   if (!g.compact) {
     assert(g.personRight <= width * .5, 'Portrait must fit in the left half');
@@ -52,6 +58,7 @@ for (const person of people.groups.concat(people.alumni || []).flatMap(group => 
   assert.equal((html.match(/<h1[ >]/g) || []).length, 1, `${person.name} needs one main heading`);
   if (hasIntro) {
     assert(html.includes('data-member-hero'));
+    assert(html.includes('class="member-intro-identity"'), `${person.name}: group the left identity separately from the full-width summary`);
     assert(html.indexOf('data-member-intro') < html.indexOf('class="profile-grid"'));
     assert(html.includes('href="#member-details"') && html.includes('id="member-details"'));
     if (person.hero.layout === 'photo') {
