@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-18",
+  "mode": "Built-in image_gen tool",
+  "source": "assets/people/xu-yan.jpg",
+  "output": "assets/people/heroes/xu-yan-cutout.webp",
+  "notes": "Foreground includes both Xu Yan and the cat. Preserve original crop. The source photo remains unchanged in the member directory, floating card and lower profile.",
+  "prompt": "Use case: background-extraction. Edit target: supplied close selfie of an adult man with round eyeglasses in a black shirt on the left and a Sphynx cat wearing patterned clothing on the right. Create a transparent foreground cutout containing BOTH the exact existing man and cat together in their original relative positions. Remove only the indoor ceiling, bright overhead light, shelves and cages visible behind them. Preserve identity, facial details, glasses, original face angle, partial face crop at the top and left, the cat's exact face/ears, both outfits, pose, lighting and original lower crop. Do NOT reconstruct the man's missing forehead or cropped side of his face, invent body parts, beautify, change appearance, add anything or create a web page. Keep the full original portrait canvas composition, 3:4 aspect ratio. Natural clean hair/skin/cat edges, real transparent alpha, no halo, no solid background, no checkerboard, no shadow, no text."
+}

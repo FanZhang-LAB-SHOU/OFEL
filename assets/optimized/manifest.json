@@ -1198,5 +1198,33 @@
         "bytes": 267324
       }
     ]
+  },
+  "assets/people/xu-yan.jpg": {
+    "sha256": "415f0f2e8b8642286ec9e84b22aef144835809c22e0c836c30949cc78c5d2cec",
+    "bytes": 212622,
+    "width": 1080,
+    "height": 1440,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/xu-yan-97cdb93862db-320.webp",
+        "bytes": 17604
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/xu-yan-97cdb93862db-640.webp",
+        "bytes": 40244
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/xu-yan-97cdb93862db-960.webp",
+        "bytes": 65028
+      },
+      {
+        "width": 1080,
+        "src": "assets/optimized/xu-yan-97cdb93862db-1080.webp",
+        "bytes": 75676
+      }
+    ]
   }
 }

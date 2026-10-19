@@ -215,11 +215,19 @@ fill(ROOT / output_path('members/index.html'), 'member-groups', sections)
 
 # A separate first screen uses supplied photographs only; the full directory stays below.
 floating = []
-for member in [m for group in groups for m in group['members'] if m.get('profile_photo') or m.get('photo')][:11]:
+# Extra photographs receive small edge positions beyond the original eleven CSS slots.
+extra_photo_slots = [(94, 14, 6), (36, 85, 7), (66, 12, 7), (8, 60, 6),
+                     (91, 65, 6), (37, 16, 6), (64, 83, 6), (52, 90, 6)]
+for n, member in enumerate(m for group in groups for m in group['members']
+                           if m.get('profile_photo') or m.get('photo')):
     portrait = {**member, 'photo': member.get('profile_photo') or member['photo'], 'photo_alt': ''}
     image = photo(portrait, 'constellation-img', 460, 614, sizes='(max-width: 700px) 32vw, 220px')
+    position = ''
+    if n >= 11:
+        x, y, size = extra_photo_slots[(n - 11) % len(extra_photo_slots)]
+        position = f' style="--photo-x: {x}%; --photo-y: {y}%; --photo-size: {size}%"'
     floating.append(
-        f'          <li class="team-space-card"><a class="team-space-person" href="members/{esc(by_name[member["name"]]["slug"])}.html" aria-label="Meet {esc(member["name"])}">'
+        f'          <li class="team-space-card"{position}><a class="team-space-person" href="members/{esc(by_name[member["name"]]["slug"])}.html" aria-label="Meet {esc(member["name"])}">'
         f'<span class="team-space-photo" aria-hidden="true">{image}</span><span class="team-space-name" aria-hidden="true">{esc(member["name"])}</span></a></li>'
     )
 fill(ROOT / output_path('members/index.html'), 'floating-members', floating)

@@ -545,10 +545,25 @@
           "name": "Xu Yan",
           "name_zh": "闫旭",
           "role": "Master’s Student, Year 2",
-          "photo": null,
+          "photo": "assets/people/xu-yan.jpg",
           "email": null,
           "github": null,
-          "bio": null
+          "bio": "I’m a master’s student who joined in 2025. My research focuses on the activity of Pacific tuna purse-seine vessels. I want to understand why they choose to fish in different areas, and how ocean environmental factors, climate change and fisheries policies influence those choices.\n\nI’m also searching for the One Piece.",
+          "photo_alt": "Xu Yan taking a selfie with a Sphynx cat",
+          "photo_position": "50% 50%",
+          "directory_photo_position": "50% 50%",
+          "profile_photo_aspect_ratio": "1080 / 1440",
+          "bio_zh": "我是25级研究生，目前主要关注太平洋金枪鱼围网渔船的活动，想了解它们为什么选择在不同海域作业，以及海洋环境因子、气候变化和渔业政策如何影响这些选择；其次寻找 One Piece。",
+          "hero": {
+            "cutout": "assets/people/heroes/xu-yan-cutout.webp",
+            "background_color": "#718da6",
+            "summary": "I study where Pacific tuna purse-seine vessels fish and how ocean conditions, climate change and fisheries policies shape their choices. I’m also searching for the One Piece.",
+            "research": [
+              "Tuna purse-seine fisheries",
+              "Fishing-ground choice",
+              "Climate & fisheries policy"
+            ]
+          }
         },
         {
           "name": "Runxin Tian",

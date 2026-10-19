@@ -1,6 +1,13 @@
 // Exercise full-stage photo travel, bounded reflections, and the real motion controller.
 const fs = require('node:fs'), path = require('node:path'), vm = require('node:vm');
 const assert = require('node:assert/strict');
+const people = JSON.parse(fs.readFileSync(path.join(__dirname, '../assets/people.json'), 'utf8'));
+const directory = fs.readFileSync(path.join(__dirname, '../members/index.html'), 'utf8');
+const floating = directory.split('<!-- floating-members:start -->')[1].split('<!-- floating-members:end -->')[0];
+const expectedNames = people.groups.flatMap(group => group.members).filter(person => person.profile_photo || person.photo).map(person => person.name);
+const floatingNames = [...floating.matchAll(/aria-label="Meet ([^"]+)"/g)].map(match => match[1]);
+assert.equal(floatingNames.length, expectedNames.length, 'Every photographed current member must appear in the floating area');
+assert.deepEqual(new Set(floatingNames), new Set(expectedNames), 'Adding a new photo must not exclude members later in the list');
 const source = fs.readFileSync(path.join(__dirname, '../script.js'), 'utf8');
 function functionSource(name) {
   const start = source.indexOf(`function ${name}(`);
@@ -24,7 +31,7 @@ for (const [width, height, photoWidth] of [[320, 720, 100], [390, 844, 116], [76
 function fixture(reduced = false) {
   const events = {}, classes = new Set(), queue = new Map(); let sequence = 0, intersection, width = 1200;
   const stage = {getBoundingClientRect: () => ({left: 0, top: 0, width, height: 760})};
-  const cards = Array.from({length: 11}, (_, i) => ({events: {}, offsetWidth: 100, offsetHeight: 125,
+  const cards = Array.from({length: 13}, (_, i) => ({events: {}, offsetWidth: 100, offsetHeight: 125,
     style: {removeProperty(key) { delete this[key]; }},
     getBoundingClientRect: () => ({left: 60 + i * 70, top: 80 + i * 35, width: 100, height: 125}),
     addEventListener(type, fn) { this.events[type] = fn; }}));

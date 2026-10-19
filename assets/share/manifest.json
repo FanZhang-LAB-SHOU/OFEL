@@ -198,5 +198,13 @@
     "height": 1200,
     "type": "image/jpeg",
     "bytes": 83854
+  },
+  "assets/people/xu-yan.jpg": {
+    "sha256": "415f0f2e8b8642286ec9e84b22aef144835809c22e0c836c30949cc78c5d2cec",
+    "src": "assets/share/xu-yan-899b34c91c09.jpg",
+    "width": 900,
+    "height": 1200,
+    "type": "image/jpeg",
+    "bytes": 106886
   }
 }
