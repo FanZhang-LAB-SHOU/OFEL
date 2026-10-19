@@ -442,8 +442,12 @@ for n, person in enumerate(people):
         portrait = ''
         if not original_scene:
             hero_person = {**person, 'photo': hero['cutout']}
+            feather = hero.get('edge_feather')
+            if feather not in {None, 'soft', 'cropped'}:
+                raise ValueError(f'Invalid portrait feathering for {person["name"]}')
+            feather_attr = f' data-portrait-feather="{feather}"' if feather else ''
             portrait = ('<div class="member-intro-watermark" aria-hidden="true">OFEL</div>'
-                        f'<div class="member-intro-portrait">{photo(hero_person, "member-intro-photo", 1080, 1500, priority=True)}</div>')
+                        f'<div class="member-intro-portrait"{feather_attr}>{photo(hero_person, "member-intro-photo", 1080, 1500, priority=True)}</div>')
         intro_class = 'member-intro member-intro-photo-scene' if original_scene else 'member-intro'
         scene_display = ''
         if original_scene and (hero.get('photo_display') == 'contained' or hero.get('photo_copy') == 'right'):
