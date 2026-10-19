@@ -1282,5 +1282,38 @@
         "bytes": 166158
       }
     ]
+  },
+  "assets/people/feng-yao.jpg": {
+    "sha256": "e91e9be32a4b536e32eed1eb07cd77d723b37057ed5aa42f6b240cbc0fa6897c",
+    "bytes": 340621,
+    "width": 2275,
+    "height": 1279,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/feng-yao-7f449f73560a-320.webp",
+        "bytes": 9210
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/feng-yao-7f449f73560a-640.webp",
+        "bytes": 31000
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/feng-yao-7f449f73560a-960.webp",
+        "bytes": 66156
+      },
+      {
+        "width": 1440,
+        "src": "assets/optimized/feng-yao-7f449f73560a-1440.webp",
+        "bytes": 137046
+      },
+      {
+        "width": 1920,
+        "src": "assets/optimized/feng-yao-7f449f73560a-1920.webp",
+        "bytes": 219244
+      }
+    ]
   }
 }

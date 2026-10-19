@@ -611,10 +611,13 @@
           "name": "Feng Yao",
           "name_zh": "姚峰",
           "role": "Master’s Student, Year 3",
-          "photo": null,
+          "photo": "assets/people/feng-yao.jpg",
           "email": null,
           "github": null,
-          "bio": null
+          "bio": null,
+          "photo_alt": "Feng Yao wearing sunglasses beside a rock face and misty pine trees",
+          "photo_position": "30% 50%",
+          "directory_photo_position": "30% 50%"
         },
         {
           "name": "Yang Yu",
@@ -694,7 +697,7 @@
           "name_zh": "田润昕",
           "role": "Master’s Student, Year 2",
           "photo": "assets/people/runxin-tian.jpg",
-          "email": null,
+          "email": "m15804758038@163.com",
           "github": null,
           "bio": "I’m Runxin Tian, from Inner Mongolia in northern China. I enjoy drawing and photography. In September 2025, I began my master’s studies at Shanghai Ocean University and joined Professor Fan Zhang’s group. I’m grateful to Professor Zhang for his guidance and to SHOU for the opportunity to study here.\n\nMy research focuses on tuna tagging and migration. I hope to keep working in this area and hold on to my enthusiasm for research. I wish everyone in our lab family happiness, good health and peace throughout their time at SHOU.\n\nMay we all stay sincere and true to ourselves. Happy 🌞",
           "photo_alt": "A white puppy looking up at the camera, chosen by Runxin Tian for the profile",
