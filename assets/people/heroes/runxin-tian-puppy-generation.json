@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-19",
+  "mode": "Built-in image_gen tool",
+  "source": "assets/people/runxin-tian.jpg",
+  "output": "assets/people/heroes/runxin-tian-puppy-cutout.webp",
+  "notes": "Keep the supplied original photograph in the member directory, floating card and lower profile. Use the extracted puppy only in the shared full-screen hero, with right-side phone placement and a short lower-edge feather.",
+  "prompt": "Use case: background-extraction. Edit target: the attached original photograph of a white puppy looking up at the camera. Create a clean, faithful transparent-background cutout for an academic member profile hero. Remove only the pavement and foliage/background; preserve exactly this same puppy, its large dark eyes, black nose, floppy ears, expression, whiskers, fur texture, visible body and paws, and original overhead camera perspective. Keep the full visible puppy from tail/body at the top through the front paws at the bottom, with a small transparent margin around the whole subject; do not clip ears, whiskers, tail or paws. Preserve the original pose and proportions, do not invent a human or change the dog breed, no accessories or text, no shadows/backdrop/color rectangle. Keep fur edges natural and sharp, subtly recover existing detail without plastic skin or excessive sharpening. Output one high-resolution portrait cutout with genuine alpha transparency."
+}

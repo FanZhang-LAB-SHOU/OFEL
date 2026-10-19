@@ -457,13 +457,14 @@
     },
     {
       "name": "Runxin Tian",
-      "name_zh": "田润欣",
+      "name_zh": "田润昕",
       "queries": [
         "\"田润欣\" 水产 渔业 论文",
         "\"田润欣\" \"上海海洋大学\" 期刊"
       ],
       "verified_keys": [],
-      "status": "no_identity_verified_chinese_record_in_this_pass"
+      "status": "no_identity_verified_chinese_record_in_this_pass",
+      "name_correction_note": "Corrected on 2026-10-19 from the user-supplied biography. The recorded queries retain the earlier spelling 田润欣 as historical search evidence; they do not document a new search under the corrected name."
     },
     {
       "name": "Weiguo Li",

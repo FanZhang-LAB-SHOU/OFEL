@@ -1226,5 +1226,61 @@
         "bytes": 75676
       }
     ]
+  },
+  "assets/people/runxin-tian.jpg": {
+    "sha256": "8bc45cea4a136511e898d66bbb4b1e46a5114fcc4ce69631b2f66eb26a4d1cce",
+    "bytes": 74213,
+    "width": 1376,
+    "height": 1080,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/runxin-tian-78dea6974fb1-320.webp",
+        "bytes": 4722
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/runxin-tian-78dea6974fb1-640.webp",
+        "bytes": 11952
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/runxin-tian-78dea6974fb1-960.webp",
+        "bytes": 20614
+      },
+      {
+        "width": 1376,
+        "src": "assets/optimized/runxin-tian-78dea6974fb1-1376.webp",
+        "bytes": 34234
+      }
+    ]
+  },
+  "assets/people/heroes/runxin-tian-puppy-cutout.webp": {
+    "sha256": "f84a1890939266640abf1600c4b7fbf5900907834f768c2cc7ee5def296f14c8",
+    "bytes": 217504,
+    "width": 1416,
+    "height": 1111,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/runxin-tian-puppy-cutout-d4833194ef7c-320.webp",
+        "bytes": 12836
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/runxin-tian-puppy-cutout-d4833194ef7c-640.webp",
+        "bytes": 38552
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/runxin-tian-puppy-cutout-d4833194ef7c-960.webp",
+        "bytes": 78612
+      },
+      {
+        "width": 1416,
+        "src": "assets/optimized/runxin-tian-puppy-cutout-d4833194ef7c-1416.webp",
+        "bytes": 166158
+      }
+    ]
   }
 }

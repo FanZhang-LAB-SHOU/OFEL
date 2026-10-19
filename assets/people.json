@@ -691,12 +691,37 @@
         },
         {
           "name": "Runxin Tian",
-          "name_zh": "田润欣",
+          "name_zh": "田润昕",
           "role": "Master’s Student, Year 2",
-          "photo": null,
+          "photo": "assets/people/runxin-tian.jpg",
           "email": null,
           "github": null,
-          "bio": null
+          "bio": "I’m Runxin Tian, from Inner Mongolia in northern China. I enjoy drawing and photography. In September 2025, I began my master’s studies at Shanghai Ocean University and joined Professor Fan Zhang’s group. I’m grateful to Professor Zhang for his guidance and to SHOU for the opportunity to study here.\n\nMy research focuses on tuna tagging and migration. I hope to keep working in this area and hold on to my enthusiasm for research. I wish everyone in our lab family happiness, good health and peace throughout their time at SHOU.\n\nMay we all stay sincere and true to ourselves. Happy 🌞",
+          "photo_alt": "A white puppy looking up at the camera, chosen by Runxin Tian for the profile",
+          "bio_zh": "我是田润昕，来自祖国正北方——靓丽内蒙古。平时我喜欢画画和摄影，2025年9月份来到上海海洋大学读研，加入张帆老师的课题组。非常感谢张帆老师的悉心指导与教诲，也感谢SHOU给予我这份宝贵的求学机会！目前我的研究方向是金枪鱼标记与洄游的相关研究，希望后续能在这个方向持续深耕，保持科研的热忱。也祝愿我们这个课题组“大家庭”的每位成员在SHOU的每一天都开心顺遂、平安健康！\n\n希望我们都能做一个真诚真实的人，happy 🌞",
+          "directory_photo_position": "50% 50%",
+          "hero": {
+            "cutout": "assets/people/heroes/runxin-tian-puppy-cutout.webp",
+            "background_color": "#778a89",
+            "summary": "I study tuna tagging and migration. Outside research, I enjoy drawing and photography.",
+            "research": [
+              "Tuna tagging",
+              "Tuna migration"
+            ],
+            "mobile_portrait": {
+              "source": [
+                1416,
+                1111
+              ],
+              "frame": [
+                243,
+                0,
+                909,
+                1111
+              ],
+              "fade_start": 95
+            }
+          }
         },
         {
           "name": "Weiguo Li",
