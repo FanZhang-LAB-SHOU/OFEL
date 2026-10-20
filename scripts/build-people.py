@@ -456,8 +456,9 @@ for n, person in enumerate(people):
             if not (ROOT / backdrop_source).is_file():
                 raise ValueError(f'Missing introduction background for {person["name"]}')
             backdrop_width, backdrop_height = hero.get('background_dimensions', [640, 800])
+            backdrop_sizes = '100vw' if hero.get('background_light') == 'sunlight' else '640px'
             backdrop = (f'<img class="member-intro-wash" src="{esc(backdrop_source)}" alt="" aria-hidden="true" '
-                        f'width="{backdrop_width}" height="{backdrop_height}" sizes="640px" fetchpriority="low">')
+                        f'width="{backdrop_width}" height="{backdrop_height}" sizes="{backdrop_sizes}" fetchpriority="low">')
         portrait = ''
         if not original_scene:
             hero_person = {**person, 'photo': hero['cutout']}
@@ -469,6 +470,10 @@ for n, person in enumerate(people):
             portrait = ('<div class="member-intro-watermark" aria-hidden="true">OFEL</div>'
                         f'<div class="member-intro-portrait"{feather_attr}{mobile_portrait_style(person)}>{photo(hero_person, "member-intro-photo", portrait_width, portrait_height, priority=True)}</div>')
         intro_class = 'member-intro member-intro-photo-scene' if original_scene else 'member-intro'
+        background_light = hero.get('background_light')
+        if background_light not in {None, 'sunlight'}:
+            raise ValueError(f'Invalid background light for {person["name"]}')
+        background_attr = ' data-background-light="sunlight"' if background_light else ''
         scene_display = ''
         if original_scene and (hero.get('photo_display') == 'contained' or hero.get('photo_copy') == 'right'):
             scene_variant = ('data-photo-display="contained"' if hero.get('photo_display') == 'contained'
@@ -477,7 +482,7 @@ for n, person in enumerate(people):
                              f'--scene-ratio: {scene_width} / {scene_height}; '
                              f'--scene-inverse-ratio: {scene_height / scene_width:.8f}"')
         intro = (
-            f'    <section class="{intro_class}" aria-labelledby="profile-title" data-member-intro{scene_display}>'
+            f'    <section class="{intro_class}" aria-labelledby="profile-title" data-member-intro{scene_display}{background_attr}>'
             f'{backdrop}'
             f'{portrait}'
             '<div class="container member-intro-layout">'

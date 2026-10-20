@@ -804,7 +804,6 @@
           "directory_photo_position": "50% 40%",
           "hero": {
             "cutout": "assets/people/heroes/shixin-wu-cutout-v2.webp",
-            "background_color": "#718da6",
             "summary": "I’m from Jinzhou, Liaoning, and joined Professor Fan Zhang’s group in 2026. I enjoy photography and singing.",
             "research": [],
             "edge_feather": "soft",
@@ -820,7 +819,13 @@
                 1450
               ],
               "fade_start": 95
-            }
+            },
+            "background_image": "assets/people/heroes/shixin-wu-sunlight-background.webp",
+            "background_dimensions": [
+              1672,
+              941
+            ],
+            "background_light": "sunlight"
           }
         },
         {

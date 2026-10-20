@@ -285,6 +285,8 @@ body[data-member-hero] .shou-link img { padding: 2px; border-radius: 50%; backgr
 .member-intro { position: relative; min-height: 100svh; isolation: isolate; overflow: hidden; background: #040b14; color: #fff; }
 .member-intro::after { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, #030913f5 0%, #040c18d9 35%, #040c1880 65%, #030913e8 100%), linear-gradient(0deg, #030913, transparent 60%); pointer-events: none; }
 .member-intro-wash { position: absolute; inset: -20px; z-index: -2; width: calc(100% + 40px); max-width: none; height: calc(100% + 40px); object-fit: cover; filter: blur(14px) saturate(.65); pointer-events: none; }
+.member-intro[data-background-light="sunlight"]::after { background: linear-gradient(90deg, #030913f0 0%, #040c18a8 35%, #040c184d 65%, #030913a3 100%), linear-gradient(0deg, #030913, transparent 65%); }
+.member-intro[data-background-light="sunlight"] .member-intro-wash { filter: blur(8px) saturate(.9); object-position: 64% 50%; }
 .member-intro-color { background: radial-gradient(ellipse at 58% 36%, var(--member-tint), transparent 66%), #081323; }
 .member-intro-watermark { position: absolute; z-index: 0; left: 18%; top: 24%; color: #c4dcff09; font-size: clamp(140px, 25vw, 420px); font-weight: 850; letter-spacing: -.08em; line-height: 1; pointer-events: none; }
 /* Fit the mask to the image itself so letterboxing cannot expose a hard crop. */

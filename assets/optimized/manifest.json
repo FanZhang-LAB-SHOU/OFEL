@@ -1450,5 +1450,38 @@
         "bytes": 211770
       }
     ]
+  },
+  "assets/people/heroes/shixin-wu-sunlight-background.webp": {
+    "sha256": "336b5b75690e17ea65c476ecd96909bca07d87b294f049526b677762baaa8208",
+    "bytes": 63020,
+    "width": 1672,
+    "height": 941,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/shixin-wu-sunlight-background-c8f026c652a7-320.webp",
+        "bytes": 5950
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/shixin-wu-sunlight-background-c8f026c652a7-640.webp",
+        "bytes": 13714
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/shixin-wu-sunlight-background-c8f026c652a7-960.webp",
+        "bytes": 22734
+      },
+      {
+        "width": 1440,
+        "src": "assets/optimized/shixin-wu-sunlight-background-c8f026c652a7-1440.webp",
+        "bytes": 35678
+      },
+      {
+        "width": 1672,
+        "src": "assets/optimized/shixin-wu-sunlight-background-c8f026c652a7-1672.webp",
+        "bytes": 45068
+      }
+    ]
   }
 }
