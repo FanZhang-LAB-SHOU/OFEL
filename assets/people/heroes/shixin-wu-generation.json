@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-19",
+  "mode": "background-extraction",
+  "source": "assets/people/shixin-wu.jpg",
+  "output": "assets/people/heroes/shixin-wu-cutout.webp",
+  "prompt": "Use case: background-extraction. Edit target: the supplied selfie of Shixin Wu holding a bouquet inside a car. Extract this exact person AND the complete visible bouquet as a transparent-background foreground for an academic member profile hero. Remove only the car seats, windows, roof, door and background outside the person and flowers. Preserve facial identity, expression, eyes, hairstyle and bangs, head angle, white shirt, body proportions, sunflower, roses, stems, leaves, hands if visible, and the original softly sunlit photographic appearance. Do not beautify or reshape the face, change the person, remove the bouquet, or replace flowers. Keep the complete visible head, shoulders and bouquet with small transparent margins; preserve natural hair strands and flower edges, avoid a rectangular outline, white matte, black backdrop or checkerboard. Do not invent a full body or additional limbs below this close-up. No text, logos, OFEL lettering, decorative background, shadow, frame or UI. High-resolution portrait canvas with true alpha transparency and natural edges; foreground clear without oversharpening or plastic skin."
+}

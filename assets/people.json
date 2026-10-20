@@ -795,10 +795,33 @@
           "name": "Shixin Wu",
           "name_zh": "吴诗欣",
           "role": "Master’s Student, Year 1",
-          "photo": null,
-          "email": null,
+          "photo": "assets/people/shixin-wu.jpg",
+          "email": "wushxin0213@163.com",
           "github": null,
-          "bio": null
+          "bio": "I’m Shixin Wu, from Jinzhou, Liaoning. I joined Professor Fan Zhang’s research group in 2026, and I enjoy photography and singing.\n\nI’m grateful to Professor Zhang and the senior members of the group for their guidance. During my master’s studies, I look forward to learning from everyone and making progress together. I hope we can all shine in our research.",
+          "photo_alt": "Shixin Wu holding a bouquet of sunflowers and roses",
+          "bio_zh": "我是吴诗欣，来自辽宁锦州，2026年加入张帆老师的课题组。平时喜欢拍照、唱歌。非常感谢张帆老师以及各位师兄师姐的指导，希望读研期间多向大家学习，和各位共同成长、一起进步，也祝愿大家都能在科研领域闪闪发光。",
+          "directory_photo_position": "50% 40%",
+          "hero": {
+            "cutout": "assets/people/heroes/shixin-wu-cutout.webp",
+            "background_color": "#718da6",
+            "summary": "I’m from Jinzhou, Liaoning, and joined Professor Fan Zhang’s group in 2026. I enjoy photography and singing.",
+            "research": [],
+            "edge_feather": "soft",
+            "mobile_portrait": {
+              "source": [
+                1085,
+                1450
+              ],
+              "frame": [
+                0,
+                0,
+                1085,
+                1450
+              ],
+              "fade_start": 95
+            }
+          }
         },
         {
           "name": "Zhechuan Xu",

@@ -1371,5 +1371,56 @@
         "bytes": 177548
       }
     ]
+  },
+  "assets/people/shixin-wu.jpg": {
+    "sha256": "5758149798ab7f7703ba88325e4914592a0d6adaed8a84b1012b941b7ed9325d",
+    "bytes": 86592,
+    "width": 958,
+    "height": 1280,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/shixin-wu-130127425c14-320.webp",
+        "bytes": 14438
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/shixin-wu-130127425c14-640.webp",
+        "bytes": 31622
+      },
+      {
+        "width": 958,
+        "src": "assets/optimized/shixin-wu-130127425c14-958.webp",
+        "bytes": 51390
+      }
+    ]
+  },
+  "assets/people/heroes/shixin-wu-cutout.webp": {
+    "sha256": "b0193efa980beb096dbc644e720704b2854b8c6f612e3a1a9de68ca8e1b7e7ac",
+    "bytes": 421556,
+    "width": 1085,
+    "height": 1450,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/shixin-wu-cutout-7786a54d9c0b-320.webp",
+        "bytes": 36370
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/shixin-wu-cutout-7786a54d9c0b-640.webp",
+        "bytes": 109764
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/shixin-wu-cutout-7786a54d9c0b-960.webp",
+        "bytes": 205824
+      },
+      {
+        "width": 1085,
+        "src": "assets/optimized/shixin-wu-cutout-7786a54d9c0b-1085.webp",
+        "bytes": 275306
+      }
+    ]
   }
 }
