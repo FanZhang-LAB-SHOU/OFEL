@@ -490,28 +490,38 @@
     "variants": [
       {
         "width": 320,
-        "src": "assets/optimized/fan-zhang-ef62c4273ae4-320.webp",
-        "bytes": 19672
+        "src": "assets/optimized/fan-zhang-d749bda8b88c-320.webp",
+        "bytes": 34624
       },
       {
         "width": 640,
-        "src": "assets/optimized/fan-zhang-ef62c4273ae4-640.webp",
-        "bytes": 66734
+        "src": "assets/optimized/fan-zhang-d749bda8b88c-640.webp",
+        "bytes": 118146
       },
       {
         "width": 960,
-        "src": "assets/optimized/fan-zhang-ef62c4273ae4-960.webp",
-        "bytes": 135898
+        "src": "assets/optimized/fan-zhang-d749bda8b88c-960.webp",
+        "bytes": 245816
       },
       {
         "width": 1440,
-        "src": "assets/optimized/fan-zhang-ef62c4273ae4-1440.webp",
-        "bytes": 284080
+        "src": "assets/optimized/fan-zhang-d749bda8b88c-1440.webp",
+        "bytes": 519038
       },
       {
         "width": 1920,
-        "src": "assets/optimized/fan-zhang-ef62c4273ae4-1920.webp",
-        "bytes": 467182
+        "src": "assets/optimized/fan-zhang-d749bda8b88c-1920.webp",
+        "bytes": 883540
+      },
+      {
+        "width": 2560,
+        "src": "assets/optimized/fan-zhang-d749bda8b88c-2560.webp",
+        "bytes": 1427992
+      },
+      {
+        "width": 3200,
+        "src": "assets/optimized/fan-zhang-d749bda8b88c-3200.webp",
+        "bytes": 2012420
       }
     ]
   },
@@ -1537,6 +1547,540 @@
         "width": 1085,
         "src": "assets/optimized/shixin-wu-cutout-v4-858b8032b00c-1085.webp",
         "bytes": 148560
+      }
+    ]
+  },
+  "assets/people/portraits/xin-cheng-enhanced-v1.webp": {
+    "sha256": "378b898a21a0936e2bd155d84947023ab5bda2a582bc2a362721ca302580d373",
+    "bytes": 404990,
+    "width": 1485,
+    "height": 1059,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/xin-cheng-enhanced-v1-0f8812b898ba-320.webp",
+        "bytes": 20264
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/xin-cheng-enhanced-v1-0f8812b898ba-640.webp",
+        "bytes": 74542
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/xin-cheng-enhanced-v1-0f8812b898ba-960.webp",
+        "bytes": 154848
+      },
+      {
+        "width": 1440,
+        "src": "assets/optimized/xin-cheng-enhanced-v1-0f8812b898ba-1440.webp",
+        "bytes": 283462
+      },
+      {
+        "width": 1485,
+        "src": "assets/optimized/xin-cheng-enhanced-v1-0f8812b898ba-1485.webp",
+        "bytes": 353448
+      }
+    ]
+  },
+  "assets/people/portraits/sisong-dong-enhanced-v1.webp": {
+    "sha256": "9ae175d3ca3a12bb97056d9538b69cd9bcc844562164002287aead42ef43ff4f",
+    "bytes": 541170,
+    "width": 1448,
+    "height": 1086,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/sisong-dong-enhanced-v1-6e4d73aa30cd-320.webp",
+        "bytes": 38150
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/sisong-dong-enhanced-v1-6e4d73aa30cd-640.webp",
+        "bytes": 130874
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/sisong-dong-enhanced-v1-6e4d73aa30cd-960.webp",
+        "bytes": 250648
+      },
+      {
+        "width": 1440,
+        "src": "assets/optimized/sisong-dong-enhanced-v1-6e4d73aa30cd-1440.webp",
+        "bytes": 425726
+      },
+      {
+        "width": 1448,
+        "src": "assets/optimized/sisong-dong-enhanced-v1-6e4d73aa30cd-1448.webp",
+        "bytes": 487384
+      }
+    ]
+  },
+  "assets/people/portraits/dongqi-lu-enhanced-v1.webp": {
+    "sha256": "65ac2a687e56cb7523829fe6c56e0f46828db7183e48cdb65903a93c811fb226",
+    "bytes": 344154,
+    "width": 1448,
+    "height": 1086,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/dongqi-lu-enhanced-v1-27992220c219-320.webp",
+        "bytes": 24640
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/dongqi-lu-enhanced-v1-27992220c219-640.webp",
+        "bytes": 78930
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/dongqi-lu-enhanced-v1-27992220c219-960.webp",
+        "bytes": 146546
+      },
+      {
+        "width": 1440,
+        "src": "assets/optimized/dongqi-lu-enhanced-v1-27992220c219-1440.webp",
+        "bytes": 250274
+      },
+      {
+        "width": 1448,
+        "src": "assets/optimized/dongqi-lu-enhanced-v1-27992220c219-1448.webp",
+        "bytes": 302648
+      }
+    ]
+  },
+  "assets/people/portraits/hongyu-lin-enhanced-v1.webp": {
+    "sha256": "7da2f33afff94b10d002432faeec52c63db68370177ba6e58e57e77105c34dea",
+    "bytes": 424348,
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/hongyu-lin-enhanced-v1-3ed1ea20af65-320.webp",
+        "bytes": 36764
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/hongyu-lin-enhanced-v1-3ed1ea20af65-640.webp",
+        "bytes": 139600
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/hongyu-lin-enhanced-v1-3ed1ea20af65-960.webp",
+        "bytes": 266570
+      },
+      {
+        "width": 1086,
+        "src": "assets/optimized/hongyu-lin-enhanced-v1-3ed1ea20af65-1086.webp",
+        "bytes": 373882
+      }
+    ]
+  },
+  "assets/people/portraits/mingfeng-jiang-enhanced-v1.webp": {
+    "sha256": "f7e859dbe4fdeeec30f099b717459dcd5720da4cae982a1d71a159b08d19bb51",
+    "bytes": 140624,
+    "width": 1448,
+    "height": 1086,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/mingfeng-jiang-enhanced-v1-9ce17aec55cf-320.webp",
+        "bytes": 16858
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/mingfeng-jiang-enhanced-v1-9ce17aec55cf-640.webp",
+        "bytes": 40682
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/mingfeng-jiang-enhanced-v1-9ce17aec55cf-960.webp",
+        "bytes": 69616
+      },
+      {
+        "width": 1440,
+        "src": "assets/optimized/mingfeng-jiang-enhanced-v1-9ce17aec55cf-1440.webp",
+        "bytes": 113404
+      },
+      {
+        "width": 1448,
+        "src": "assets/optimized/mingfeng-jiang-enhanced-v1-9ce17aec55cf-1448.webp",
+        "bytes": 126704
+      }
+    ]
+  },
+  "assets/people/portraits/runze-wang-enhanced-v1.webp": {
+    "sha256": "42b9b8bc82062ad6436a9c5bac9c4edc711a1cbdd4b503ee70c11b7da41bc41d",
+    "bytes": 283358,
+    "width": 968,
+    "height": 1624,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/runze-wang-enhanced-v1-4401ffb702d1-320.webp",
+        "bytes": 55212
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/runze-wang-enhanced-v1-4401ffb702d1-640.webp",
+        "bytes": 136348
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/runze-wang-enhanced-v1-4401ffb702d1-960.webp",
+        "bytes": 225774
+      },
+      {
+        "width": 968,
+        "src": "assets/optimized/runze-wang-enhanced-v1-4401ffb702d1-968.webp",
+        "bytes": 255448
+      }
+    ]
+  },
+  "assets/people/portraits/shuang-ma-enhanced-v1.webp": {
+    "sha256": "36385d1990e31586e20a21cc033df30fc5fc20e11240f7c73a54abbcdd741d05",
+    "bytes": 127378,
+    "width": 1205,
+    "height": 1305,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/shuang-ma-enhanced-v1-ced2de542742-320.webp",
+        "bytes": 19486
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/shuang-ma-enhanced-v1-ced2de542742-640.webp",
+        "bytes": 47756
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/shuang-ma-enhanced-v1-ced2de542742-960.webp",
+        "bytes": 79686
+      },
+      {
+        "width": 1205,
+        "src": "assets/optimized/shuang-ma-enhanced-v1-ced2de542742-1205.webp",
+        "bytes": 113498
+      }
+    ]
+  },
+  "assets/people/portraits/feng-yao-enhanced-v1.webp": {
+    "sha256": "3498c5caff3e5347c8c65a05cb5238fbbd875153f20fa6800c505c3d852ce2ca",
+    "bytes": 377960,
+    "width": 1673,
+    "height": 940,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/feng-yao-enhanced-v1-8d73cfacccbd-320.webp",
+        "bytes": 18200
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/feng-yao-enhanced-v1-8d73cfacccbd-640.webp",
+        "bytes": 62172
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/feng-yao-enhanced-v1-8d73cfacccbd-960.webp",
+        "bytes": 123752
+      },
+      {
+        "width": 1440,
+        "src": "assets/optimized/feng-yao-enhanced-v1-8d73cfacccbd-1440.webp",
+        "bytes": 223148
+      },
+      {
+        "width": 1673,
+        "src": "assets/optimized/feng-yao-enhanced-v1-8d73cfacccbd-1673.webp",
+        "bytes": 336918
+      }
+    ]
+  },
+  "assets/people/portraits/yang-yu-enhanced-v1.webp": {
+    "sha256": "4010741b44c21d1884ad2ef0b6fc74b75e7bcd960eec5b5f816a141ae108f140",
+    "bytes": 149688,
+    "width": 1131,
+    "height": 1391,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/yang-yu-enhanced-v1-4d7c7b2a6656-320.webp",
+        "bytes": 19364
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/yang-yu-enhanced-v1-4d7c7b2a6656-640.webp",
+        "bytes": 49828
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/yang-yu-enhanced-v1-4d7c7b2a6656-960.webp",
+        "bytes": 83840
+      },
+      {
+        "width": 1131,
+        "src": "assets/optimized/yang-yu-enhanced-v1-4d7c7b2a6656-1131.webp",
+        "bytes": 122412
+      }
+    ]
+  },
+  "assets/people/portraits/xu-yan-enhanced-v1.webp": {
+    "sha256": "0fd20f061553c1fa365e9bad1b77d31659b87227ddd982985d2b84286180709f",
+    "bytes": 256026,
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/xu-yan-enhanced-v1-0dd128e3d090-320.webp",
+        "bytes": 32876
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/xu-yan-enhanced-v1-0dd128e3d090-640.webp",
+        "bytes": 92794
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/xu-yan-enhanced-v1-0dd128e3d090-960.webp",
+        "bytes": 149130
+      },
+      {
+        "width": 1086,
+        "src": "assets/optimized/xu-yan-enhanced-v1-0dd128e3d090-1086.webp",
+        "bytes": 205268
+      }
+    ]
+  },
+  "assets/people/portraits/runxin-tian-enhanced-v1.webp": {
+    "sha256": "dff910a3ee525572faad9293a69bb79b07a8eec2ad14e15147d3c5edb9bccedc",
+    "bytes": 128672,
+    "width": 1416,
+    "height": 1111,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/runxin-tian-enhanced-v1-a9f6b70927d3-320.webp",
+        "bytes": 11640
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/runxin-tian-enhanced-v1-a9f6b70927d3-640.webp",
+        "bytes": 32340
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/runxin-tian-enhanced-v1-a9f6b70927d3-960.webp",
+        "bytes": 57942
+      },
+      {
+        "width": 1416,
+        "src": "assets/optimized/runxin-tian-enhanced-v1-a9f6b70927d3-1416.webp",
+        "bytes": 109478
+      }
+    ]
+  },
+  "assets/people/portraits/weiguo-li-enhanced-v1.webp": {
+    "sha256": "1fa4d7697c0e74f0ca499792bf7417ebb1803b56df944eace6b783464dc2e16e",
+    "bytes": 199054,
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/weiguo-li-enhanced-v1-e8b9fc665577-320.webp",
+        "bytes": 31874
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/weiguo-li-enhanced-v1-e8b9fc665577-640.webp",
+        "bytes": 82966
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/weiguo-li-enhanced-v1-e8b9fc665577-960.webp",
+        "bytes": 132046
+      },
+      {
+        "width": 1086,
+        "src": "assets/optimized/weiguo-li-enhanced-v1-e8b9fc665577-1086.webp",
+        "bytes": 172586
+      }
+    ]
+  },
+  "assets/people/portraits/zhuojin-jiang-enhanced-v1.webp": {
+    "sha256": "7f1676fa333580d93d72a6d95e3c86b435328aec86a351bd197495bfa77ae207",
+    "bytes": 211274,
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/zhuojin-jiang-enhanced-v1-8f5f0ea9c8ab-320.webp",
+        "bytes": 12342
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/zhuojin-jiang-enhanced-v1-8f5f0ea9c8ab-640.webp",
+        "bytes": 40842
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/zhuojin-jiang-enhanced-v1-8f5f0ea9c8ab-960.webp",
+        "bytes": 80616
+      },
+      {
+        "width": 1440,
+        "src": "assets/optimized/zhuojin-jiang-enhanced-v1-8f5f0ea9c8ab-1440.webp",
+        "bytes": 142876
+      },
+      {
+        "width": 1536,
+        "src": "assets/optimized/zhuojin-jiang-enhanced-v1-8f5f0ea9c8ab-1536.webp",
+        "bytes": 179756
+      }
+    ]
+  },
+  "assets/people/portraits/haotian-sun-enhanced-v1.webp": {
+    "sha256": "271361d6fe7bb2a638116ca584923dcfde27d6c6337d10308b515f45279add2a",
+    "bytes": 210090,
+    "width": 1388,
+    "height": 1133,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/haotian-sun-enhanced-v1-c4e4edeb3f7f-320.webp",
+        "bytes": 22980
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/haotian-sun-enhanced-v1-c4e4edeb3f7f-640.webp",
+        "bytes": 62692
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/haotian-sun-enhanced-v1-c4e4edeb3f7f-960.webp",
+        "bytes": 106814
+      },
+      {
+        "width": 1388,
+        "src": "assets/optimized/haotian-sun-enhanced-v1-c4e4edeb3f7f-1388.webp",
+        "bytes": 187966
+      }
+    ]
+  },
+  "assets/people/portraits/rutong-tang-enhanced-v1.webp": {
+    "sha256": "e4a6d512384bfbb2e3a7d6ce511a7fba266383c5b76dfd1aa53a550d806ed319",
+    "bytes": 94708,
+    "width": 1185,
+    "height": 1327,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/rutong-tang-enhanced-v1-2bfca3d0ca01-320.webp",
+        "bytes": 10136
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/rutong-tang-enhanced-v1-2bfca3d0ca01-640.webp",
+        "bytes": 29116
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/rutong-tang-enhanced-v1-2bfca3d0ca01-960.webp",
+        "bytes": 50248
+      },
+      {
+        "width": 1185,
+        "src": "assets/optimized/rutong-tang-enhanced-v1-2bfca3d0ca01-1185.webp",
+        "bytes": 78586
+      }
+    ]
+  },
+  "assets/people/portraits/yuhang-cheng-enhanced-v1.webp": {
+    "sha256": "77f8d9134720c26fa4e65ffac4219d8e62b992d2c5f963bdf48ae7d73ea8fe05",
+    "bytes": 161794,
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/yuhang-cheng-enhanced-v1-490b32153bf6-320.webp",
+        "bytes": 15084
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/yuhang-cheng-enhanced-v1-490b32153bf6-640.webp",
+        "bytes": 49024
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/yuhang-cheng-enhanced-v1-490b32153bf6-960.webp",
+        "bytes": 89512
+      },
+      {
+        "width": 1086,
+        "src": "assets/optimized/yuhang-cheng-enhanced-v1-490b32153bf6-1086.webp",
+        "bytes": 138260
+      }
+    ]
+  },
+  "assets/people/portraits/ziyi-geng-enhanced-v1.webp": {
+    "sha256": "3d24debd6c6ff625cc3ab00b5672ba511856d671a0d23be2dc52f629e179543c",
+    "bytes": 286626,
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/ziyi-geng-enhanced-v1-6695694ce60c-320.webp",
+        "bytes": 32558
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/ziyi-geng-enhanced-v1-6695694ce60c-640.webp",
+        "bytes": 95062
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/ziyi-geng-enhanced-v1-6695694ce60c-960.webp",
+        "bytes": 171108
+      },
+      {
+        "width": 1086,
+        "src": "assets/optimized/ziyi-geng-enhanced-v1-6695694ce60c-1086.webp",
+        "bytes": 242274
+      }
+    ]
+  },
+  "assets/people/portraits/faruyi-wan-enhanced-v1.webp": {
+    "sha256": "fc5a22cf8569b11fa832a88136f1831f7c2322bebbbf414e02c5daf1ac824fc3",
+    "bytes": 158742,
+    "width": 1086,
+    "height": 1448,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/faruyi-wan-enhanced-v1-f9009ab3700f-320.webp",
+        "bytes": 12436
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/faruyi-wan-enhanced-v1-f9009ab3700f-640.webp",
+        "bytes": 43252
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/faruyi-wan-enhanced-v1-f9009ab3700f-960.webp",
+        "bytes": 77876
+      },
+      {
+        "width": 1086,
+        "src": "assets/optimized/faruyi-wan-enhanced-v1-f9009ab3700f-1086.webp",
+        "bytes": 135628
       }
     ]
   }

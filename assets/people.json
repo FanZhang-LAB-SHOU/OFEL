@@ -90,7 +90,8 @@
             }
           },
           "directory_photo_position": "92% 50%",
-          "directory_photo_scale": 1.35
+          "directory_photo_scale": 1.35,
+          "profile_photo": "assets/people/portraits/xin-cheng-enhanced-v1.webp"
         },
         {
           "name": "Sisong Dong",
@@ -122,7 +123,8 @@
               ],
               "fade_start": 90
             }
-          }
+          },
+          "profile_photo": "assets/people/portraits/sisong-dong-enhanced-v1.webp"
         }
       ]
     },
@@ -203,7 +205,8 @@
               "width": 3840,
               "height": 2160
             }
-          ]
+          ],
+          "profile_photo": "assets/people/portraits/dongqi-lu-enhanced-v1.webp"
         },
         {
           "name": "Hongyu Lin",
@@ -235,7 +238,8 @@
               ],
               "fade_start": 90
             }
-          }
+          },
+          "profile_photo": "assets/people/portraits/hongyu-lin-enhanced-v1.webp"
         },
         {
           "name": "Mingfeng Jiang",
@@ -269,7 +273,8 @@
             }
           },
           "directory_photo_position": "67% 50%",
-          "directory_photo_scale": 1.15
+          "directory_photo_scale": 1.15,
+          "profile_photo": "assets/people/portraits/mingfeng-jiang-enhanced-v1.webp"
         },
         {
           "name": "Xiaoci Wu",
@@ -562,7 +567,8 @@
                 ]
               }
             ]
-          }
+          },
+          "profile_photo": "assets/people/portraits/runze-wang-enhanced-v1.webp"
         },
         {
           "name": "Jiayi Zhou",
@@ -605,7 +611,8 @@
               ],
               "fade_start": 90
             }
-          }
+          },
+          "profile_photo": "assets/people/portraits/shuang-ma-enhanced-v1.webp"
         },
         {
           "name": "Feng Yao",
@@ -617,7 +624,8 @@
           "bio": null,
           "photo_alt": "Feng Yao wearing sunglasses beside a rock face and misty pine trees",
           "photo_position": "30% 50%",
-          "directory_photo_position": "30% 50%"
+          "directory_photo_position": "30% 50%",
+          "profile_photo": "assets/people/portraits/feng-yao-enhanced-v1.webp"
         },
         {
           "name": "Yang Yu",
@@ -653,7 +661,8 @@
               ],
               "fade_start": 90
             }
-          }
+          },
+          "profile_photo": "assets/people/portraits/yang-yu-enhanced-v1.webp"
         },
         {
           "name": "Xu Yan",
@@ -690,7 +699,8 @@
                 1448
               ]
             }
-          }
+          },
+          "profile_photo": "assets/people/portraits/xu-yan-enhanced-v1.webp"
         },
         {
           "name": "Runxin Tian",
@@ -724,7 +734,8 @@
               ],
               "fade_start": 95
             }
-          }
+          },
+          "profile_photo": "assets/people/portraits/runxin-tian-enhanced-v1.webp"
         },
         {
           "name": "Weiguo Li",
@@ -756,7 +767,8 @@
                 1292
               ]
             }
-          }
+          },
+          "profile_photo": "assets/people/portraits/weiguo-li-enhanced-v1.webp"
         },
         {
           "name": "Xianglong Yan",
@@ -912,7 +924,8 @@
               2172,
               724
             ]
-          }
+          },
+          "profile_photo": "assets/people/portraits/zhuojin-jiang-enhanced-v1.webp"
         },
         {
           "name": "Haotian Sun",
@@ -938,7 +951,8 @@
               "Tuna biology",
               "Spawning-ground assessment"
             ]
-          }
+          },
+          "profile_photo": "assets/people/portraits/haotian-sun-enhanced-v1.webp"
         },
         {
           "name": "Rutong Tang",
@@ -947,7 +961,7 @@
           "email": "Tangrt0113@163.com",
           "github": null,
           "bio": "I’m Rutong Tang, a Master’s graduate from the class of 2026. I study stock assessment of short-lived species, comparing surplus production models for assessing jumbo squid under climate change.",
-          "profile_photo": "assets/people/rutong-tang-portrait.jpg",
+          "profile_photo": "assets/people/portraits/rutong-tang-enhanced-v1.webp",
           "photo_alt": "Rutong Tang flying a butterfly kite beside a lake",
           "profile_photo_alt": "Portrait of Rutong Tang",
           "profile_photo_aspect_ratio": "1280 / 1433",
@@ -1011,7 +1025,8 @@
                 1328
               ]
             }
-          }
+          },
+          "profile_photo": "assets/people/portraits/yuhang-cheng-enhanced-v1.webp"
         },
         {
           "name": "Ziyi Geng",
@@ -1045,7 +1060,8 @@
                 1439
               ]
             }
-          }
+          },
+          "profile_photo": "assets/people/portraits/ziyi-geng-enhanced-v1.webp"
         },
         {
           "name": "Faruyi Wan",
@@ -1080,7 +1096,8 @@
                 1348
               ]
             }
-          }
+          },
+          "profile_photo": "assets/people/portraits/faruyi-wan-enhanced-v1.webp"
         }
       ]
     }

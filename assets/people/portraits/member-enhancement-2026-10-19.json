@@ -1,0 +1,173 @@
+{
+  "date": "2026-10-19",
+  "tool": "built-in image_gen",
+  "purpose": "Conservative clarity restoration and light natural retouching for directory, floating cards and rectangular biography photos. Existing hero scenes/cutouts and source files are preserved.",
+  "images": [
+    {
+      "slug": "xin-cheng",
+      "source": "assets/people/xin-cheng.jpg",
+      "output": "assets/people/portraits/xin-cheng-enhanced-v1.webp",
+      "width": 1485,
+      "height": 1059,
+      "prompt": "Use case: identity-preserve / conservative photo restoration. Edit target: the supplied original photo used in an academic laboratory member directory and rectangular biography photo. Produce a clean high-resolution photographic restoration with the EXACT same complete scene, original aspect ratio, crop, camera perspective, subject placement and pose. Reduce JPEG artifacts and noise, improve natural clarity and gentle local exposure, while preserving intentional background blur and atmospheric light. If a human face is visibly present, apply only a very light professional beauty retouch: even small skin-tone irregularities, soften minor blemishes and tiredness, reduce excessive shine while retaining real skin texture, exact facial geometry, age, expression, glasses and recognizable identity. No face slimming, eye enlargement, makeup, beauty-filter face, changed features or invented facial detail. Hair/fur should remain naturally soft, never sharply etched individual wires. Preserve all scenery, objects, clothing, hands and visible text; no isolating, removing/replacing background, cropping, extra limbs, new objects, artificial light effects, added captions or watermark. Opaque full photo, not a transparent cutout. Output at least 2000 pixels on the long edge if possible, preserving original full composition. Scene constraints: Only a seated woman seen from behind, dark clothes, long hair and a little pale plush toy by a waterfront. Keep the hidden face hidden and the backlit mood; no invented face."
+    },
+    {
+      "slug": "sisong-dong",
+      "source": "assets/people/sisong-dong.jpg",
+      "output": "assets/people/portraits/sisong-dong-enhanced-v1.webp",
+      "width": 1448,
+      "height": 1086,
+      "prompt": "Use case: identity-preserve / conservative photo restoration. Edit target: the supplied original photo used in an academic laboratory member directory and rectangular biography photo. Produce a clean high-resolution photographic restoration with the EXACT same complete scene, original aspect ratio, crop, camera perspective, subject placement and pose. Reduce JPEG artifacts and noise, improve natural clarity and gentle local exposure, while preserving intentional background blur and atmospheric light. If a human face is visibly present, apply only a very light professional beauty retouch: even small skin-tone irregularities, soften minor blemishes and tiredness, reduce excessive shine while retaining real skin texture, exact facial geometry, age, expression, glasses and recognizable identity. No face slimming, eye enlargement, makeup, beauty-filter face, changed features or invented facial detail. Hair/fur should remain naturally soft, never sharply etched individual wires. Preserve all scenery, objects, clothing, hands and visible text; no isolating, removing/replacing background, cropping, extra limbs, new objects, artificial light effects, added captions or watermark. Opaque full photo, not a transparent cutout. Output at least 2000 pixels on the long edge if possible, preserving original full composition. Scene constraints: A bicycle beside a forest road and guardrail. This is not a human portrait: only restore photographic clarity; preserve exact bicycle frame, wheels, spokes, bottles, forest and perspective."
+    },
+    {
+      "slug": "dongqi-lu",
+      "source": "assets/people/dongqi-lu-sydney.jpg",
+      "output": "assets/people/portraits/dongqi-lu-enhanced-v1.webp",
+      "width": 1448,
+      "height": 1086,
+      "prompt": "Use case: identity-preserve / conservative photo restoration. Edit target: the supplied original photo used in an academic laboratory member directory and rectangular biography photo. Produce a clean high-resolution photographic restoration with the EXACT same complete scene, original aspect ratio, crop, camera perspective, subject placement and pose. Reduce JPEG artifacts and noise, improve natural clarity and gentle local exposure, while preserving intentional background blur and atmospheric light. If a human face is visibly present, apply only a very light professional beauty retouch: even small skin-tone irregularities, soften minor blemishes and tiredness, reduce excessive shine while retaining real skin texture, exact facial geometry, age, expression, glasses and recognizable identity. No face slimming, eye enlargement, makeup, beauty-filter face, changed features or invented facial detail. Hair/fur should remain naturally soft, never sharply etched individual wires. Preserve all scenery, objects, clothing, hands and visible text; no isolating, removing/replacing background, cropping, extra limbs, new objects, artificial light effects, added captions or watermark. Opaque full photo, not a transparent cutout. Output at least 2000 pixels on the long edge if possible, preserving original full composition. Scene constraints: The man in glasses and dark jacket in front of Sydney Opera House. Preserve all architecture, crowd, sea, blue sky, sunlight and composition. Very light skin-tone/shine cleanup only, exact facial geometry."
+    },
+    {
+      "slug": "hongyu-lin",
+      "source": "assets/people/hongyu-lin.jpg",
+      "output": "assets/people/portraits/hongyu-lin-enhanced-v1.webp",
+      "width": 1086,
+      "height": 1448,
+      "prompt": "Use case: identity-preserve / conservative photo restoration. Edit target: the supplied original photo used in an academic laboratory member directory and rectangular biography photo. Produce a clean high-resolution photographic restoration with the EXACT same complete scene, original aspect ratio, crop, camera perspective, subject placement and pose. Reduce JPEG artifacts and noise, improve natural clarity and gentle local exposure, while preserving intentional background blur and atmospheric light. If a human face is visibly present, apply only a very light professional beauty retouch: even small skin-tone irregularities, soften minor blemishes and tiredness, reduce excessive shine while retaining real skin texture, exact facial geometry, age, expression, glasses and recognizable identity. No face slimming, eye enlargement, makeup, beauty-filter face, changed features or invented facial detail. Hair/fur should remain naturally soft, never sharply etched individual wires. Preserve all scenery, objects, clothing, hands and visible text; no isolating, removing/replacing background, cropping, extra limbs, new objects, artificial light effects, added captions or watermark. Opaque full photo, not a transparent cutout. Output at least 2000 pixels on the long edge if possible, preserving original full composition. Scene constraints: A fluffy white-and-grey cat lying upside down on a dark sofa with plush toys. Preserve the inverted orientation, exact markings, eyes, pose, sofa and toys. No human face retouching or altered anatomy."
+    },
+    {
+      "slug": "mingfeng-jiang",
+      "source": "assets/people/mingfeng-jiang.jpg",
+      "output": "assets/people/portraits/mingfeng-jiang-enhanced-v1.webp",
+      "width": 1448,
+      "height": 1086,
+      "prompt": "Use case: identity-preserve / conservative photo restoration. Edit target: the supplied original photo used in an academic laboratory member directory and rectangular biography photo. Produce a clean high-resolution photographic restoration with the EXACT same complete scene, original aspect ratio, crop, camera perspective, subject placement and pose. Reduce JPEG artifacts and noise, improve natural clarity and gentle local exposure, while preserving intentional background blur and atmospheric light. If a human face is visibly present, apply only a very light professional beauty retouch: even small skin-tone irregularities, soften minor blemishes and tiredness, reduce excessive shine while retaining real skin texture, exact facial geometry, age, expression, glasses and recognizable identity. No face slimming, eye enlargement, makeup, beauty-filter face, changed features or invented facial detail. Hair/fur should remain naturally soft, never sharply etched individual wires. Preserve all scenery, objects, clothing, hands and visible text; no isolating, removing/replacing background, cropping, extra limbs, new objects, artificial light effects, added captions or watermark. Opaque full photo, not a transparent cutout. Output at least 2000 pixels on the long edge if possible, preserving original full composition. Scene constraints: The man in glasses with a puffer jacket and backpack by a snowy lakeside town. Keep the same smile, exact face, winter haze, snow, lake and railings."
+    },
+    {
+      "slug": "runze-wang",
+      "source": "assets/people/runze-wang.jpg",
+      "output": "assets/people/portraits/runze-wang-enhanced-v1.webp",
+      "width": 968,
+      "height": 1624,
+      "prompt": "Use case: identity-preserve / conservative photo restoration. Edit target: the supplied original photo used in an academic laboratory member directory and rectangular biography photo. Produce a clean high-resolution photographic restoration with the EXACT same complete scene, original aspect ratio, crop, camera perspective, subject placement and pose. Reduce JPEG artifacts and noise, improve natural clarity and gentle local exposure, while preserving intentional background blur and atmospheric light. If a human face is visibly present, apply only a very light professional beauty retouch: even small skin-tone irregularities, soften minor blemishes and tiredness, reduce excessive shine while retaining real skin texture, exact facial geometry, age, expression, glasses and recognizable identity. No face slimming, eye enlargement, makeup, beauty-filter face, changed features or invented facial detail. Hair/fur should remain naturally soft, never sharply etched individual wires. Preserve all scenery, objects, clothing, hands and visible text; no isolating, removing/replacing background, cropping, extra limbs, new objects, artificial light effects, added captions or watermark. Opaque full photo, not a transparent cutout. Output at least 2000 pixels on the long edge if possible, preserving original full composition. Scene constraints: A person in an elaborate brown-and-gold cosplay outfit with a long wig covering the eyes, weapon prop and wooden bridge. Keep the eyes hidden by the wig, exact pose, costume motifs, weapon, hands and scene. Preserve character makeup."
+    },
+    {
+      "slug": "shuang-ma",
+      "source": "assets/people/shuang-ma.jpg",
+      "output": "assets/people/portraits/shuang-ma-enhanced-v1.webp",
+      "width": 1205,
+      "height": 1305,
+      "prompt": "Use case: identity-preserve / conservative photo restoration. Edit target: the supplied original photo used in an academic laboratory member directory and rectangular biography photo. Produce a clean high-resolution photographic restoration with the EXACT same complete scene, original aspect ratio, crop, camera perspective, subject placement and pose. Reduce JPEG artifacts and noise, improve natural clarity and gentle local exposure, while preserving intentional background blur and atmospheric light. If a human face is visibly present, apply only a very light professional beauty retouch: even small skin-tone irregularities, soften minor blemishes and tiredness, reduce excessive shine while retaining real skin texture, exact facial geometry, age, expression, glasses and recognizable identity. No face slimming, eye enlargement, makeup, beauty-filter face, changed features or invented facial detail. Hair/fur should remain naturally soft, never sharply etched individual wires. Preserve all scenery, objects, clothing, hands and visible text; no isolating, removing/replacing background, cropping, extra limbs, new objects, artificial light effects, added captions or watermark. Opaque full photo, not a transparent cutout. Output at least 2000 pixels on the long edge if possible, preserving original full composition. Scene constraints: A stylized game/anime character wearing a hat and holding a floppy-eared toy in a blue stone setting. Preserve the same 3D/anime look, face, costume, toy, framing and existing top crop. Only clean compression and improve resolution; do not turn into a real person or add makeup."
+    },
+    {
+      "slug": "feng-yao",
+      "source": "assets/people/feng-yao.jpg",
+      "output": "assets/people/portraits/feng-yao-enhanced-v1.webp",
+      "width": 1673,
+      "height": 940,
+      "prompt": "Use case: identity-preserve / conservative photo restoration. Edit target: the supplied original photo used in an academic laboratory member directory and rectangular biography photo. Produce a clean high-resolution photographic restoration with the EXACT same complete scene, original aspect ratio, crop, camera perspective, subject placement and pose. Reduce JPEG artifacts and noise, improve natural clarity and gentle local exposure, while preserving intentional background blur and atmospheric light. If a human face is visibly present, apply only a very light professional beauty retouch: even small skin-tone irregularities, soften minor blemishes and tiredness, reduce excessive shine while retaining real skin texture, exact facial geometry, age, expression, glasses and recognizable identity. No face slimming, eye enlargement, makeup, beauty-filter face, changed features or invented facial detail. Hair/fur should remain naturally soft, never sharply etched individual wires. Preserve all scenery, objects, clothing, hands and visible text; no isolating, removing/replacing background, cropping, extra limbs, new objects, artificial light effects, added captions or watermark. Opaque full photo, not a transparent cutout. Output at least 2000 pixels on the long edge if possible, preserving original full composition. Scene constraints: A man wearing sunglasses and a grey shirt by a rocky wall and misty pine trees. Preserve sunglasses, actual face, pose and atmospheric mountain mist. Do not remove mist as if it were a defect."
+    },
+    {
+      "slug": "yang-yu",
+      "source": "assets/people/yang-yu.jpg",
+      "output": "assets/people/portraits/yang-yu-enhanced-v1.webp",
+      "width": 1131,
+      "height": 1391,
+      "prompt": "Use case: identity-preserve / conservative photo restoration. Edit target: the supplied original photo used in an academic laboratory member directory and rectangular biography photo. Produce a clean high-resolution photographic restoration with the EXACT same complete scene, original aspect ratio, crop, camera perspective, subject placement and pose. Reduce JPEG artifacts and noise, improve natural clarity and gentle local exposure, while preserving intentional background blur and atmospheric light. If a human face is visibly present, apply only a very light professional beauty retouch: even small skin-tone irregularities, soften minor blemishes and tiredness, reduce excessive shine while retaining real skin texture, exact facial geometry, age, expression, glasses and recognizable identity. No face slimming, eye enlargement, makeup, beauty-filter face, changed features or invented facial detail. Hair/fur should remain naturally soft, never sharply etched individual wires. Preserve all scenery, objects, clothing, hands and visible text; no isolating, removing/replacing background, cropping, extra limbs, new objects, artificial light effects, added captions or watermark. Opaque full photo, not a transparent cutout. Output at least 2000 pixels on the long edge if possible, preserving original full composition. Scene constraints: A cream-colored long-haired cat seated on papers in front of pink floral curtains. Keep exact face, fur, eyes, pose, papers and curtains. Only natural clarity restoration, no changes to markings."
+    },
+    {
+      "slug": "xu-yan",
+      "source": "assets/people/xu-yan.jpg",
+      "output": "assets/people/portraits/xu-yan-enhanced-v1.webp",
+      "width": 1086,
+      "height": 1448,
+      "prompt": "Use case: identity-preserve / conservative photo restoration. Edit target: the supplied original photo used in an academic laboratory member directory and rectangular biography photo. Produce a clean high-resolution photographic restoration with the EXACT same complete scene, original aspect ratio, crop, camera perspective, subject placement and pose. Reduce JPEG artifacts and noise, improve natural clarity and gentle local exposure, while preserving intentional background blur and atmospheric light. If a human face is visibly present, apply only a very light professional beauty retouch: even small skin-tone irregularities, soften minor blemishes and tiredness, reduce excessive shine while retaining real skin texture, exact facial geometry, age, expression, glasses and recognizable identity. No face slimming, eye enlargement, makeup, beauty-filter face, changed features or invented facial detail. Hair/fur should remain naturally soft, never sharply etched individual wires. Preserve all scenery, objects, clothing, hands and visible text; no isolating, removing/replacing background, cropping, extra limbs, new objects, artificial light effects, added captions or watermark. Opaque full photo, not a transparent cutout. Output at least 2000 pixels on the long edge if possible, preserving original full composition. Scene constraints: A close selfie of a man in glasses beside a Sphynx cat in a patterned sweater. Preserve the intentionally cropped human head, cat wrinkles, eyes, ears, exact perspective and light. Very light human skin retouch only; do not smooth away the cat wrinkles or change facial proportions."
+    },
+    {
+      "slug": "runxin-tian",
+      "source": "assets/people/runxin-tian.jpg",
+      "output": "assets/people/portraits/runxin-tian-enhanced-v1.webp",
+      "width": 1416,
+      "height": 1111,
+      "prompt": "Use case: identity-preserve / conservative photo restoration. Edit target: the supplied original photo used in an academic laboratory member directory and rectangular biography photo. Produce a clean high-resolution photographic restoration with the EXACT same complete scene, original aspect ratio, crop, camera perspective, subject placement and pose. Reduce JPEG artifacts and noise, improve natural clarity and gentle local exposure, while preserving intentional background blur and atmospheric light. If a human face is visibly present, apply only a very light professional beauty retouch: even small skin-tone irregularities, soften minor blemishes and tiredness, reduce excessive shine while retaining real skin texture, exact facial geometry, age, expression, glasses and recognizable identity. No face slimming, eye enlargement, makeup, beauty-filter face, changed features or invented facial detail. Hair/fur should remain naturally soft, never sharply etched individual wires. Preserve all scenery, objects, clothing, hands and visible text; no isolating, removing/replacing background, cropping, extra limbs, new objects, artificial light effects, added captions or watermark. Opaque full photo, not a transparent cutout. Output at least 2000 pixels on the long edge if possible, preserving original full composition. Scene constraints: A white puppy standing on a grey path. Preserve the exact puppy face, black eyes, small ears, white coat and paw position. Improve gentle natural detail without sharp wire-like fur; keep background."
+    },
+    {
+      "slug": "weiguo-li",
+      "source": "assets/people/weiguo-li.jpg",
+      "output": "assets/people/portraits/weiguo-li-enhanced-v1.webp",
+      "width": 1086,
+      "height": 1448,
+      "prompt": "Use case: identity-preserve / conservative photo restoration. Edit target: the supplied original photo used in an academic laboratory member directory and rectangular biography photo. Produce a clean high-resolution photographic restoration with the EXACT same complete scene, original aspect ratio, crop, camera perspective, subject placement and pose. Reduce JPEG artifacts and noise, improve natural clarity and gentle local exposure, while preserving intentional background blur and atmospheric light. If a human face is visibly present, apply only a very light professional beauty retouch: even small skin-tone irregularities, soften minor blemishes and tiredness, reduce excessive shine while retaining real skin texture, exact facial geometry, age, expression, glasses and recognizable identity. No face slimming, eye enlargement, makeup, beauty-filter face, changed features or invented facial detail. Hair/fur should remain naturally soft, never sharply etched individual wires. Preserve all scenery, objects, clothing, hands and visible text; no isolating, removing/replacing background, cropping, extra limbs, new objects, artificial light effects, added captions or watermark. Opaque full photo, not a transparent cutout. Output at least 2000 pixels on the long edge if possible, preserving original full composition. Scene constraints: Two hands touching a large plasma globe on a white table in a science exhibit. Preserve both hands and every finger, glass sphere, electric filaments, reflections, base and scene. No face exists, do not add a person."
+    },
+    {
+      "slug": "zhuojin-jiang",
+      "source": "assets/people/zhuojin-jiang.jpg",
+      "output": "assets/people/portraits/zhuojin-jiang-enhanced-v1.webp",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Use case: identity-preserve / conservative photo restoration. Edit target: the supplied original photo used in an academic laboratory member directory and rectangular biography photo. Produce a clean high-resolution photographic restoration with the EXACT same complete scene, original aspect ratio, crop, camera perspective, subject placement and pose. Reduce JPEG artifacts and noise, improve natural clarity and gentle local exposure, while preserving intentional background blur and atmospheric light. If a human face is visibly present, apply only a very light professional beauty retouch: even small skin-tone irregularities, soften minor blemishes and tiredness, reduce excessive shine while retaining real skin texture, exact facial geometry, age, expression, glasses and recognizable identity. No face slimming, eye enlargement, makeup, beauty-filter face, changed features or invented facial detail. Hair/fur should remain naturally soft, never sharply etched individual wires. Preserve all scenery, objects, clothing, hands and visible text; no isolating, removing/replacing background, cropping, extra limbs, new objects, artificial light effects, added captions or watermark. Opaque full photo, not a transparent cutout. Output at least 2000 pixels on the long edge if possible, preserving original full composition. Scene constraints: A blurred side-profile silhouette wearing a red cap by the sea at sunset. Keep the face softly out of focus and silhouette unchanged. Improve scenery/tonal clarity gently, retain sunset, ship, sea and original depth of field; do not reconstruct a sharp face."
+    },
+    {
+      "slug": "haotian-sun",
+      "source": "assets/people/haotian-sun.jpg",
+      "output": "assets/people/portraits/haotian-sun-enhanced-v1.webp",
+      "width": 1388,
+      "height": 1133,
+      "prompt": "Use case: identity-preserve / conservative photo restoration. Edit target: the supplied original photo used in an academic laboratory member directory and rectangular biography photo. Produce a clean high-resolution photographic restoration with the EXACT same complete scene, original aspect ratio, crop, camera perspective, subject placement and pose. Reduce JPEG artifacts and noise, improve natural clarity and gentle local exposure, while preserving intentional background blur and atmospheric light. If a human face is visibly present, apply only a very light professional beauty retouch: even small skin-tone irregularities, soften minor blemishes and tiredness, reduce excessive shine while retaining real skin texture, exact facial geometry, age, expression, glasses and recognizable identity. No face slimming, eye enlargement, makeup, beauty-filter face, changed features or invented facial detail. Hair/fur should remain naturally soft, never sharply etched individual wires. Preserve all scenery, objects, clothing, hands and visible text; no isolating, removing/replacing background, cropping, extra limbs, new objects, artificial light effects, added captions or watermark. Opaque full photo, not a transparent cutout. Output at least 2000 pixels on the long edge if possible, preserving original full composition. Scene constraints: A man viewed from behind in a blue plaid shirt at a beach table with drinks and flowers, a large ship at sea. Keep his face hidden, original crop, ship, sea, hands, chair and objects. Preserve original soft focus."
+    },
+    {
+      "slug": "rutong-tang",
+      "source": "assets/people/rutong-tang-portrait.jpg",
+      "output": "assets/people/portraits/rutong-tang-enhanced-v1.webp",
+      "width": 1185,
+      "height": 1327,
+      "prompt": "Use case: identity-preserve / conservative photo restoration. Edit target: the supplied original photo used in an academic laboratory member directory and rectangular biography photo. Produce a clean high-resolution photographic restoration with the EXACT same complete scene, original aspect ratio, crop, camera perspective, subject placement and pose. Reduce JPEG artifacts and noise, improve natural clarity and gentle local exposure, while preserving intentional background blur and atmospheric light. If a human face is visibly present, apply only a very light professional beauty retouch: even small skin-tone irregularities, soften minor blemishes and tiredness, reduce excessive shine while retaining real skin texture, exact facial geometry, age, expression, glasses and recognizable identity. No face slimming, eye enlargement, makeup, beauty-filter face, changed features or invented facial detail. Hair/fur should remain naturally soft, never sharply etched individual wires. Preserve all scenery, objects, clothing, hands and visible text; no isolating, removing/replacing background, cropping, extra limbs, new objects, artificial light effects, added captions or watermark. Opaque full photo, not a transparent cutout. Output at least 2000 pixels on the long edge if possible, preserving original full composition. Scene constraints: A frontal ID portrait of the young woman in a white collared shirt and navy vest, white background. Preserve exact face, expression, hairline, clothing and plain white background. Subtle skin tone and blemish cleanup, no face reshaping."
+    },
+    {
+      "slug": "yuhang-cheng",
+      "source": "assets/people/yuhang-cheng.jpg",
+      "output": "assets/people/portraits/yuhang-cheng-enhanced-v1.webp",
+      "width": 1086,
+      "height": 1448,
+      "prompt": "Use case: identity-preserve / conservative photo restoration. Edit target: the supplied original photo used in an academic laboratory member directory and rectangular biography photo. Produce a clean high-resolution photographic restoration with the EXACT same complete scene, original aspect ratio, crop, camera perspective, subject placement and pose. Reduce JPEG artifacts and noise, improve natural clarity and gentle local exposure, while preserving intentional background blur and atmospheric light. If a human face is visibly present, apply only a very light professional beauty retouch: even small skin-tone irregularities, soften minor blemishes and tiredness, reduce excessive shine while retaining real skin texture, exact facial geometry, age, expression, glasses and recognizable identity. No face slimming, eye enlargement, makeup, beauty-filter face, changed features or invented facial detail. Hair/fur should remain naturally soft, never sharply etched individual wires. Preserve all scenery, objects, clothing, hands and visible text; no isolating, removing/replacing background, cropping, extra limbs, new objects, artificial light effects, added captions or watermark. Opaque full photo, not a transparent cutout. Output at least 2000 pixels on the long edge if possible, preserving original full composition. Scene constraints: A frontal ID portrait of the young man in a black top against blue background. Preserve exact face, expression, hairstyle, reddish hair color, clothing and background."
+    },
+    {
+      "slug": "ziyi-geng",
+      "source": "assets/people/ziyi-geng.jpg",
+      "output": "assets/people/portraits/ziyi-geng-enhanced-v1.webp",
+      "width": 1086,
+      "height": 1448,
+      "prompt": "Use case: identity-preserve / conservative photo restoration. Edit target: the supplied original photo used in an academic laboratory member directory and rectangular biography photo. Produce a clean high-resolution photographic restoration with the EXACT same complete scene, original aspect ratio, crop, camera perspective, subject placement and pose. Reduce JPEG artifacts and noise, improve natural clarity and gentle local exposure, while preserving intentional background blur and atmospheric light. If a human face is visibly present, apply only a very light professional beauty retouch: even small skin-tone irregularities, soften minor blemishes and tiredness, reduce excessive shine while retaining real skin texture, exact facial geometry, age, expression, glasses and recognizable identity. No face slimming, eye enlargement, makeup, beauty-filter face, changed features or invented facial detail. Hair/fur should remain naturally soft, never sharply etched individual wires. Preserve all scenery, objects, clothing, hands and visible text; no isolating, removing/replacing background, cropping, extra limbs, new objects, artificial light effects, added captions or watermark. Opaque full photo, not a transparent cutout. Output at least 2000 pixels on the long edge if possible, preserving original full composition. Scene constraints: A woman in large round glasses and pale jacket inside a vehicle. Preserve exact face, glasses, hair, pose, sunlight, vehicle interior and moving green scenery. Reduce excessive facial shine subtly without removing sunlight."
+    },
+    {
+      "slug": "faruyi-wan",
+      "source": "assets/people/faruyi-wan.jpg",
+      "output": "assets/people/portraits/faruyi-wan-enhanced-v1.webp",
+      "width": 1086,
+      "height": 1448,
+      "prompt": "Use case: identity-preserve / conservative photo restoration. Edit target: the supplied original photo used in an academic laboratory member directory and rectangular biography photo. Produce a clean high-resolution photographic restoration with the EXACT same complete scene, original aspect ratio, crop, camera perspective, subject placement and pose. Reduce JPEG artifacts and noise, improve natural clarity and gentle local exposure, while preserving intentional background blur and atmospheric light. If a human face is visibly present, apply only a very light professional beauty retouch: even small skin-tone irregularities, soften minor blemishes and tiredness, reduce excessive shine while retaining real skin texture, exact facial geometry, age, expression, glasses and recognizable identity. No face slimming, eye enlargement, makeup, beauty-filter face, changed features or invented facial detail. Hair/fur should remain naturally soft, never sharply etched individual wires. Preserve all scenery, objects, clothing, hands and visible text; no isolating, removing/replacing background, cropping, extra limbs, new objects, artificial light effects, added captions or watermark. Opaque full photo, not a transparent cutout. Output at least 2000 pixels on the long edge if possible, preserving original full composition. Scene constraints: A formal head-and-shoulders ID portrait of a young woman wearing a dark blazer against white background. Keep exact face, hair, expression, age, outfit, crop and white background."
+    }
+  ],
+  "skipped": [
+    {
+      "slug": "qinqin-lin",
+      "reason": "Existing restored-retouched rectangular photograph retained."
+    },
+    {
+      "slug": "xianglong-yan",
+      "reason": "Existing restored-retouched rectangular photograph retained."
+    },
+    {
+      "slug": "zhechuan-xu",
+      "reason": "Existing restored-retouched rectangular photograph retained."
+    },
+    {
+      "slug": "shixin-wu",
+      "reason": "User requested retaining original photograph and its sunlight/rainbow. Generated candidate discarded."
+    },
+    {
+      "slug": "fan-zhang",
+      "reason": "User rejected generated facial restoration. Original JPEG retained byte-for-byte; only higher-quality responsive delivery encodings added."
+    }
+  ]
+}

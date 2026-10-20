@@ -29,11 +29,14 @@ async function main() {
     const rotated = [5, 6, 7, 8].includes(meta.orientation);
     const width = rotated ? meta.height : meta.width;
     const height = rotated ? meta.width : meta.height;
-    const quality = /poster|fig\d|roadmap/i.test(source) ? 88 : 82;
+    const originalFacultyPhoto = /people\/fan-zhang\.jpg$/.test(source);
+    const enhancedPortrait = /people\/portraits\/.*-enhanced-v1\.webp$/.test(source);
+    const quality = originalFacultyPhoto ? 94 : enhancedPortrait ? 90 : /poster|fig\d|roadmap/i.test(source) ? 88 : 82;
     const digest = crypto.createHash('sha256').update(bytes).digest('hex');
     const version = crypto.createHash('sha256').update(digest + `webp-${quality}-v1`).digest('hex').slice(0, 12);
     const stem = path.basename(source, path.extname(source)).replace(/[^a-z0-9-]/gi, '-');
-    const sizes = [...new Set([...widths.filter(size => size < width), Math.min(width, 1920)])].sort((a,b) => a-b);
+    const outputWidths = originalFacultyPhoto ? [...widths, 2560, 3200] : widths;
+    const sizes = [...new Set([...outputWidths.filter(size => size < width), Math.min(width, originalFacultyPhoto ? 3200 : 1920)])].sort((a,b) => a-b);
     const variants = [];
     for (const size of sizes) {
       const filename = `${stem}-${version}-${size}.webp`;
