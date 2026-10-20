@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-19",
+  "tool": "built-in image_gen",
+  "mode": "precise-object-edit",
+  "source": "assets/people/heroes/shixin-wu-cutout-v2.webp",
+  "output": "assets/people/heroes/shixin-wu-cutout-v4.webp",
+  "prompt": "Use case: precise-object-edit. Edit only the HAIR in this supplied transparent portrait cutout of Shixin Wu holding a sunflower and rose bouquet. Keep the face exactly as it is in this reference: natural clean skin and original warm photographic lighting, with absolutely NO rainbow light, colored refraction, prism stripe, colored glow, face paint or colored highlight on the face or forehead. Preserve her exact facial identity, expression, eyes, skin texture, pose, flowers, shirt, body and composition. The hair is too sharply detailed and wire-like, especially individual bright flyaway strands around the crown and outer edges. Give only the hair visibly softer photographic focus, lower microcontrast and lower strand-level clarity: blend tiny bright wire-like strands into naturally soft broad locks, reduce bright edge highlights and gently feather the hair outline. It should look like a normal slightly soft phone photograph while the face, eyes and flowers stay clear. Retain the dark hair color, hairstyle, bangs, volume and complete rounded crown. No extra hair height. Keep the same portrait dimensions, subject size and foreground position. True alpha transparency outside the person and bouquet. No background, detached flare, checkerboard, text, logo, frame or new objects."
+}
