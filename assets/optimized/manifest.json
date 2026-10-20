@@ -1422,5 +1422,33 @@
         "bytes": 275306
       }
     ]
+  },
+  "assets/people/heroes/shixin-wu-cutout-v2.webp": {
+    "sha256": "a68657398bbbd30d2ce63b2a3f2d59ebeb4f61eb1c10f70562cd73387a57e6bc",
+    "bytes": 355002,
+    "width": 1085,
+    "height": 1450,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/shixin-wu-cutout-v2-f26e87031993-320.webp",
+        "bytes": 29508
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/shixin-wu-cutout-v2-f26e87031993-640.webp",
+        "bytes": 86786
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/shixin-wu-cutout-v2-f26e87031993-960.webp",
+        "bytes": 158372
+      },
+      {
+        "width": 1085,
+        "src": "assets/optimized/shixin-wu-cutout-v2-f26e87031993-1085.webp",
+        "bytes": 211770
+      }
+    ]
   }
 }

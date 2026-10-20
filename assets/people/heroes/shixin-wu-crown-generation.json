@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-19",
+  "tool": "built-in image_gen",
+  "mode": "precise-object-edit",
+  "source": "assets/people/heroes/shixin-wu-cutout.webp",
+  "output": "assets/people/heroes/shixin-wu-cutout-v2.webp",
+  "prompt": "Use case: precise-object-edit. Edit target: the supplied transparent cutout of Shixin Wu holding a sunflower and rose bouquet. Repair ONLY the cropped upper crown of the hair: extend the canvas upward, reconstruct the small missing top of her head with a natural rounded crown and dark hair texture matching her existing hairstyle and lighting, and leave approximately 5 percent transparent breathing room above the complete head. Preserve the exact face, facial identity, expression, eyes, cheeks, bangs, jaw, head angle, existing hair, white shirt, bouquet, flowers, stems, leaves, hands and all existing foreground detail. Do not enlarge the skull or invent excessive tall hair. Maintain the photographic selfie appearance and the same pose and proportions. Background must remain genuinely transparent everywhere outside the subject and bouquet. Preserve natural hair edges. Do not restore a car background, add decorations, shadows, lettering, OFEL, a frame, colored backdrop, or a checkerboard. Keep the entire existing visible foreground and bouquet, with extra canvas above rather than cutting any existing area. Output a high-resolution transparent portrait cutout ready for a website hero."
+}
