@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-19",
+  "tool": "built-in image_gen",
+  "mode": "precise-object-edit",
+  "source": "assets/people/shixin-wu.jpg",
+  "output": "assets/people/heroes/shixin-wu-sunlight-background.webp",
+  "prompt": "Use case: precise-object-edit. Asset: wide photographic background plate for Shixin Wu's academic profile website. Input image is the original sunlit selfie inside a car; use its exact sunlight atmosphere as reference. Remove the person and all bouquet/flowers entirely and fill their former area with plausible softly out-of-focus car interior and window light. Preserve and extend the beautiful late-afternoon sunlight, warm haze, and subtle diagonal rainbow lens flare from upper right toward lower left that is visible in the original. Reframe and naturally extend into a wide 16:9 landscape background. The scene should have subdued navy/charcoal car-seat and interior tones on the left third for readable white typography; warm sunlight and the rainbow light streak should remain clearly visible in the center and right, without a large blown-out white region. Natural camera photograph, gentle soft focus, bright but restrained warm sunlight, tasteful editorial atmosphere. No person, face, hair, silhouette, mannequin, body, flowers, duplicate subject or ghostly portrait. No text, logo, OFEL letters, frame, UI, illustration or artificial starbursts. This is only the background; a separate foreground cutout of the woman and flowers will be laid over it by the website."
+}
