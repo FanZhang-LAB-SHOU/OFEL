@@ -771,6 +771,40 @@
           "profile_photo": "assets/people/portraits/weiguo-li-enhanced-v1.webp"
         },
         {
+          "name": "Jiayi Yang",
+          "name_zh": "杨佳怡",
+          "role": "Master’s Student, Year 2",
+          "photo": "assets/people/jiayi-yang-rousong.jpg",
+          "email": null,
+          "github": null,
+          "bio": "I joined Professor Fan Zhang’s team in October 2025. My research focuses on fisheries stock assessment, particularly the relationship between tuna age structure and recruitment, which I’m still exploring.\n\nI hope to have a fulfilling and enjoyable time during my master’s studies, learning and making progress together with everyone in the group. I hope we can all keep our enthusiasm for research and life.\n\nThe dog in my photo is Rousong, a food-loving, lively and affectionate little dog. Woof, woof!",
+          "bio_zh": "我在2025年10月加入张帆教授的团队，研究方向是渔业资源评估，主要关注金枪鱼年龄结构与补充量之间的关系，仍在努力探索中。希望在课题组度过充实而愉快的硕士时光，和大家一起学习、共同进步，也愿我们始终保持对科研和生活的热情！\n\n对了，照片中的是肉松，一只超级贪吃、活泼又粘人的小狗！汪旺！",
+          "photo_alt": "Rousong, the playful cream-colored dog featured on Jiayi Yang’s profile",
+          "hero": {
+            "cutout": "assets/people/heroes/jiayi-yang-rousong-cutout.webp",
+            "background_color": "#9b9488",
+            "summary": "I joined Professor Fan Zhang’s team in October 2025. I study fisheries stock assessment, focusing on the relationship between tuna age structure and recruitment.",
+            "research": [
+              "Fisheries stock assessment",
+              "Tuna age structure and recruitment"
+            ],
+            "edge_feather": "soft",
+            "mobile_portrait": {
+              "source": [
+                1083,
+                1452
+              ],
+              "frame": [
+                0,
+                0,
+                1083,
+                1452
+              ],
+              "fade_start": 95
+            }
+          }
+        },
+        {
           "name": "Xianglong Yan",
           "name_zh": "闫祥龙",
           "role": "Master’s Student, Year 1",

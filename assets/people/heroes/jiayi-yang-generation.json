@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-20",
+  "tool": "built-in image_gen",
+  "mode": "background-extraction",
+  "source": "assets/people/jiayi-yang-rousong.jpg",
+  "output": "assets/people/heroes/jiayi-yang-rousong-cutout.webp",
+  "prompt": "Use case: background-extraction. Edit target: the supplied photograph of Rousong, a small cream/apricot fluffy dog on a white background with pastel stars. Extract ONLY this exact dog as a transparent foreground for an academic member profile hero. Remove the white background, all star stickers and the drawn white cutout outline around the dog. Preserve the exact puppy face, black eyes, black nose, open smiling mouth, pink tongue, floppy ears, fluffy curly cream/apricot coat, paw positions, diagonal body pose and source crop. Keep all currently visible dog anatomy; do not invent the cropped upper back or additional legs, change the animal, rotate the head, beautify the face or turn it into a drawing. Keep fur naturally soft with gentle alpha edges, not artificially oversharpened individual strands. Use the same portrait aspect ratio and framing, with a small transparent breathing margin. Genuine alpha transparency outside the dog, no shadow, white matte, colored backdrop, checkerboard, text, logos, OFEL, stars or UI. A faithful photographic cutout, not a redesigned animal."
+}

@@ -2083,5 +2083,56 @@
         "bytes": 135628
       }
     ]
+  },
+  "assets/people/jiayi-yang-rousong.jpg": {
+    "sha256": "7ee9935158b4448e2733bbe4bc555d452b871e00e40dc0e7a078d29d2fa3a595",
+    "bytes": 173422,
+    "width": 955,
+    "height": 1280,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/jiayi-yang-rousong-34fb3f6b339b-320.webp",
+        "bytes": 16424
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/jiayi-yang-rousong-34fb3f6b339b-640.webp",
+        "bytes": 39862
+      },
+      {
+        "width": 955,
+        "src": "assets/optimized/jiayi-yang-rousong-34fb3f6b339b-955.webp",
+        "bytes": 64470
+      }
+    ]
+  },
+  "assets/people/heroes/jiayi-yang-rousong-cutout.webp": {
+    "sha256": "c4e37d3663898c8af1d1ca814223bedeef7f42a5267ef55f7aef2fa705b6b982",
+    "bytes": 301352,
+    "width": 1083,
+    "height": 1452,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/jiayi-yang-rousong-cutout-94b50101edcb-320.webp",
+        "bytes": 29564
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/jiayi-yang-rousong-cutout-94b50101edcb-640.webp",
+        "bytes": 84170
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/jiayi-yang-rousong-cutout-94b50101edcb-960.webp",
+        "bytes": 158772
+      },
+      {
+        "width": 1083,
+        "src": "assets/optimized/jiayi-yang-rousong-cutout-94b50101edcb-1083.webp",
+        "bytes": 204976
+      }
+    ]
   }
 }
