@@ -2134,5 +2134,33 @@
         "bytes": 204976
       }
     ]
+  },
+  "assets/people/yudong-huang.jpg": {
+    "sha256": "fc368d082458c807e4e060e92a4182c65567e80984675c9b54c9897623655d64",
+    "bytes": 98787,
+    "width": 1280,
+    "height": 960,
+    "variants": [
+      {
+        "width": 320,
+        "src": "assets/optimized/yudong-huang-f8704c1ac290-320.webp",
+        "bytes": 4688
+      },
+      {
+        "width": 640,
+        "src": "assets/optimized/yudong-huang-f8704c1ac290-640.webp",
+        "bytes": 14068
+      },
+      {
+        "width": 960,
+        "src": "assets/optimized/yudong-huang-f8704c1ac290-960.webp",
+        "bytes": 27898
+      },
+      {
+        "width": 1280,
+        "src": "assets/optimized/yudong-huang-f8704c1ac290-1280.webp",
+        "bytes": 46572
+      }
+    ]
   }
 }

@@ -161,6 +161,11 @@ def photo(member, cls, width, height, priority=False, sizes=None):
     position = member.get('directory_photo_position', '50% 50%') if directory_portrait else member.get('photo_position')
     if position:
         styles.append(f'object-position: {esc(position)}')
+    scene_position = member.get('hero', {}).get('scene_position') if cls == 'member-intro-scene-image' else None
+    if scene_position:
+        if not re.fullmatch(r'(?:100|\d{1,2})% (?:100|\d{1,2})%', scene_position):
+            raise ValueError(f'Invalid scene position for {member["name"]}')
+        styles.append(f'object-position: {scene_position} !important')
     if directory_portrait and member.get('directory_photo_scale'):
         scale = float(member['directory_photo_scale'])
         if not 1 <= scale <= 2:

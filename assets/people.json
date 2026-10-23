@@ -926,10 +926,25 @@
         {
           "name": "Yudong Huang",
           "name_zh": "黄宇东",
-          "photo": null,
+          "photo": "assets/people/yudong-huang.jpg",
           "email": null,
           "github": null,
-          "bio": null
+          "bio": "A tuna feeding researcher, three years into the journey.",
+          "bio_zh": "与金枪鱼有三年缘分的摄食研究者",
+          "photo_alt": "Yudong Huang wearing sunglasses beside a lake, with pale dunes in the background",
+          "directory_photo_position": "50% 60%",
+          "hero": {
+            "layout": "photo",
+            "photo_dimensions": [
+              1280,
+              960
+            ],
+            "scene_position": "50% 50%",
+            "summary": "A tuna feeding researcher, three years into the journey.",
+            "research": [
+              "Tuna feeding ecology"
+            ]
+          }
         },
         {
           "name": "Zhuojin Jiang",
