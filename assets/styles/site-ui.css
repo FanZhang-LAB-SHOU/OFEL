@@ -1169,3 +1169,29 @@ body[data-page="fan-zhang"] main { padding-top: 0; }
 @media (max-width: 760px) and (hover: none) {
   .team-space-name { opacity: 1; padding: 14px 5px 8px; font-size: 11px; line-height: 1.3; }
 }
+
+/* Full scenes retain the supplied frame; phones show the photo above the copy. */
+body[data-member-hero] .member-intro[data-photo-display="full"] { min-height: 0; background: #0b1c2c; }
+body[data-member-hero] .member-intro[data-photo-display="full"] .member-intro-scene-image {
+  position: relative; display: block; inset: auto; z-index: -2;
+  width: 100%; min-width: 0; height: auto; max-height: none;
+  aspect-ratio: var(--scene-ratio); object-fit: contain; transform: none;
+  -webkit-mask-image: none; mask-image: none;
+}
+body[data-member-hero] .member-intro[data-photo-display="full"] .member-intro-layout {
+  position: absolute; inset: 0 auto 0 0; width: 32%; min-height: 0;
+  margin-left: clamp(24px, 5vw, 80px); margin-right: 0;
+  padding: calc(var(--header-height) + 40px) 0 96px;
+}
+@media (max-width: 760px) {
+  body[data-member-hero] .member-intro[data-photo-display="full"] { padding-top: var(--header-height); }
+  body[data-member-hero] .member-intro[data-photo-display="full"]::after { background: none; }
+  body[data-member-hero] .member-intro[data-photo-display="full"] .member-intro-layout {
+    position: relative; inset: auto; width: auto; margin-inline: 24px;
+    min-height: 0; padding: 28px 0 100px; gap: 28px;
+  }
+  .member-intro[data-photo-display="full"] .member-intro-identity { width: 100%; min-height: 0; }
+  .member-intro[data-photo-display="full"] h1 { font-size: clamp(36px, 9vw, 60px); }
+  .member-intro[data-photo-display="full"] h1 span { display: inline; }
+  .member-intro[data-photo-display="full"] h1 span + span::before { content: ' '; }
+}

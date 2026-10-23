@@ -442,7 +442,8 @@ for n, person in enumerate(people):
         if original_scene:
             scene_width, scene_height = hero['photo_dimensions']
             scene_sizes = ('(max-width: 760px) calc(100vw - 48px), 38vw'
-                           if hero.get('photo_display') == 'contained' else 'max(100vw, 150svh)')
+                           if hero.get('photo_display') == 'contained' else
+                           '100vw' if hero.get('photo_display') == 'full' else 'max(100vw, 150svh)')
             backdrop = photo(person, 'member-intro-scene-image', scene_width, scene_height,
                              priority=True, sizes=scene_sizes)
             if hero.get('scene_image'):
@@ -480,8 +481,8 @@ for n, person in enumerate(people):
             raise ValueError(f'Invalid background light for {person["name"]}')
         background_attr = ' data-background-light="sunlight"' if background_light else ''
         scene_display = ''
-        if original_scene and (hero.get('photo_display') == 'contained' or hero.get('photo_copy') == 'right'):
-            scene_variant = ('data-photo-display="contained"' if hero.get('photo_display') == 'contained'
+        if original_scene and (hero.get('photo_display') in {'contained', 'full'} or hero.get('photo_copy') == 'right'):
+            scene_variant = (f'data-photo-display="{hero["photo_display"]}"' if hero.get('photo_display') in {'contained', 'full'}
                              else 'data-photo-copy="right"')
             scene_display = (f' {scene_variant} style="--scene-width: {scene_width}px; '
                              f'--scene-ratio: {scene_width} / {scene_height}; '
